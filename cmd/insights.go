@@ -21,7 +21,7 @@ type Insights struct {
 }
 
 func parseJS(reader io.Reader) {
-
+	
 }
 
 func processFile(srcFile io.Reader) {
