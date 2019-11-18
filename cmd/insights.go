@@ -44,10 +44,7 @@ func processFile(srcFile io.Reader) {
 		}
 
 		switch fname := filepath.Base(h.Name); fname {
-		case "docker_version.json":
-			bs, _ := ioutil.ReadAll(tr)
-			err = json.Unmarshal(bs, &insight)
-		case "docker_info.json":
+		case "docker_version.json", "docker_info.json":
 			bs, _ := ioutil.ReadAll(tr)
 			err = json.Unmarshal(bs, &insight)
 		case "loadavg":
