@@ -6,13 +6,13 @@ You are tasked with creating a project, in the language of your choice, to analy
 
 The following insights should be extracted from a bundle:
 
-- Host OS
-- Host OS version
-- Number of cores
-- The 15 minute load average
-- Disk usage in bytes on the root device
-- Docker version
-- Docker storage driver
+- [x] Host OS
+- [x] Host OS version
+- [x] Number of cores
+- [x] The 15 minute load average
+- [ ] Disk usage in bytes on the root device
+- [x] Docker version
+- [x] Docker storage driver
 
 We have included a sample bundle in this project. The following command can be run to generate additional bundles:
 
