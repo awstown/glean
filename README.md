@@ -1,19 +1,22 @@
 1. Please share a sample of some code you’ve written or contributed to, that is a good reflection of your programming skill.  Github link(s) would be ideal.  If you're up for writing some fresh code, please take a shot at this programming challenge: https://github.com/replicatedcom/core-challenge-troubleshoot-analyzers
 
 2. Please share a sample of some technical writing you’ve done, particularly if you have something published -- a blog post, design document, block comments from code, etc...
+> See: [Service Asset and Configuration Management](./ServiceAssetandConfigurationManagement-161119-2143.pdf)
 
 3. Please share a sample of analysis - for example, a bug report, threat modeling, performance-tuning analysis, or a war story about a security incident or a production outage.
+> I had a hard time finding a recent example. I haven't had to formalize any of the above for a couple years.
 
-4. What is an example of something that you learned that was a struggle for you?
+1. What is an example of something that you learned that was a struggle for you?
 > When I see what I perceive to be an injustice to someone, I have the tendacy to want to lash out in their defense. This often does more harm than good. I've had to learn how to check my emotions in these moments and not follow my first instict. I still get angry about the injustice, but I'm able to see it more as a warning sign that something is not quite right and should explore the situation more carefully.
 
 1. Who is someone who has mentored you, and what did you learn from them?
 > DKG was a jerk. He was crass, irreverent and stubborn. He wasn't always right, but when he was he'd make sure you knew it. I hated him right up until I joined another team and all of a sudden I realized he had made it possible for me to work with literally anyone. The miserable experience he provided was so much more challenging intellectually and emotionally than anything I have faced since. He taught me how to check my ego at the door, patiently wade through the noise, find what looked like value and finally test that to ensure success. 
 
 6. Who is someone you have mentored, and what did you learn from them?
-> David 
+> David is my youngest brother, we're 6 years apart. He lived near me throughout his college years and naturally we became quite close. I helped him get his first job and always advised him when asked. At some point I had come to a ceiling in my job at the time. I felt guilt about leaving the area to find more oppurtunity. Not to be dramatic, but I felt like I was abondoning him. I brought this up one night and he said, "Um yeah... you should go for it". Almost like he didn't understand why I would feel guilty.
+> ...
 
-7. What qualities do you most admire in other software engineers?
+1. What qualities do you most admire in other software engineers?
 > Candidness, eloquence, humor and empathy (understanding the users needs)
 
 8. Describe some of the more interesting differences between two programming languages you know.
