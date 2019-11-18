@@ -1,0 +1,491 @@
+[
+  {
+    "path": "default/commands/date/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/date",
+        "name": "date"
+      }
+    }
+  },
+  {
+    "path": "default/commands/date/stdout",
+    "format": "",
+    "size": 29,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/date",
+        "name": "date"
+      }
+    }
+  },
+  {
+    "path": "default/commands/df/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df",
+        "name": "df",
+        "args": [
+          "-al"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/df/stdout",
+    "format": "",
+    "size": 2605,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df",
+        "name": "df",
+        "args": [
+          "-al"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/df_inodes/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df_inodes",
+        "name": "df",
+        "args": [
+          "-ali"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/df_inodes/stdout",
+    "format": "",
+    "size": 2645,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df_inodes",
+        "name": "df",
+        "args": [
+          "-ali"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/free/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/free",
+        "name": "free",
+        "args": [
+          "-m"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/free/stdout",
+    "format": "",
+    "size": 204,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/free",
+        "name": "free",
+        "args": [
+          "-m"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_addr_show/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_addr_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "addr",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_addr_show/stdout",
+    "format": "",
+    "size": 741,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_addr_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "addr",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_link_show/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_link_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "link",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_link_show/stdout",
+    "format": "",
+    "size": 938,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_link_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "link",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_route_show/stdout",
+    "format": "",
+    "size": 199,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_route_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "route",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_route_show/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_route_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "route",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/loadavg/loadavg",
+    "format": "",
+    "size": 26,
+    "spec": {
+      "os.loadavg": {
+        "output_dir": "default/commands/loadavg",
+        "template": ""
+      }
+    }
+  },
+  {
+    "path": "default/commands/hostname/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.hostname": {
+        "output_dir": "default/commands/hostname"
+      }
+    }
+  },
+  {
+    "path": "default/commands/hostname/stdout",
+    "format": "",
+    "size": 15,
+    "spec": {
+      "os.hostname": {
+        "output_dir": "default/commands/hostname"
+      }
+    }
+  },
+  {
+    "path": "default/commands/uptime/uptime",
+    "format": "",
+    "size": 20,
+    "spec": {
+      "os.uptime": {
+        "output_dir": "default/commands/uptime",
+        "template": ""
+      }
+    }
+  },
+  {
+    "path": "default/commands/ps/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ps",
+        "name": "ps",
+        "args": [
+          "fauxwww"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ps/stdout",
+    "format": "",
+    "size": 15401,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ps",
+        "name": "ps",
+        "args": [
+          "fauxwww"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/etc/fstab",
+    "format": "",
+    "size": 89,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/fstab"
+      }
+    }
+  },
+  {
+    "path": "default/etc/hosts",
+    "format": "",
+    "size": 160,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/hosts"
+      }
+    }
+  },
+  {
+    "path": "default/etc/os-release",
+    "format": "",
+    "size": 29,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/os-release"
+      }
+    }
+  },
+  {
+    "path": "default/proc/cpuinfo",
+    "format": "",
+    "size": 1843,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/cpuinfo"
+      }
+    }
+  },
+  {
+    "path": "default/proc/meminfo",
+    "format": "",
+    "size": 1251,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/meminfo"
+      }
+    }
+  },
+  {
+    "path": "default/proc/mounts",
+    "format": "",
+    "size": 3098,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/mounts"
+      }
+    }
+  },
+  {
+    "path": "default/proc/uptime",
+    "format": "",
+    "size": 20,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/uptime"
+      }
+    }
+  },
+  {
+    "path": "default/proc/version",
+    "format": "",
+    "size": 123,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/version"
+      }
+    }
+  },
+  {
+    "path": "default/proc/vmstat",
+    "format": "",
+    "size": 2380,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/vmstat"
+      }
+    }
+  },
+  {
+    "path": "default/etc/resolv.conf",
+    "format": "",
+    "size": 68,
+    "spec": {
+      "os.read-file": {
+        "description": "DNS resolv.conf",
+        "output_dir": "default/etc",
+        "filepath": "/etc/resolv.conf"
+      }
+    }
+  },
+  {
+    "path": "default/docker/docker_info.json",
+    "format": "",
+    "size": 2915,
+    "spec": {
+      "docker.info": {
+        "output_dir": "default/docker"
+      }
+    }
+  },
+  {
+    "path": "default/docker/docker_version.json",
+    "format": "",
+    "size": 285,
+    "spec": {
+      "docker.version": {
+        "output_dir": "default/docker"
+      }
+    }
+  },
+  {
+    "path": "default/docker/image_ls.json",
+    "format": "",
+    "size": 13192,
+    "spec": {
+      "docker.image-ls": {
+        "output_dir": "default/docker",
+        "All": false,
+        "Filters": null
+      }
+    }
+  },
+  {
+    "path": "default/docker/container_ls.json",
+    "format": "",
+    "size": 91187,
+    "spec": {
+      "docker.container-ls": {
+        "output_dir": "default/docker",
+        "Quiet": false,
+        "Size": false,
+        "All": true,
+        "Latest": false,
+        "Since": "",
+        "Before": "",
+        "Limit": 0,
+        "Filters": null
+      }
+    }
+  },
+  {
+    "path": "default/kubernetes/kubelet/logs/logs.raw",
+    "format": "",
+    "size": 17,
+    "spec": {
+      "journald.logs": {
+        "output_dir": "default/kubernetes/kubelet/logs",
+        "unit": "kubelet",
+        "reverse": true
+      }
+    }
+  },
+  {
+    "path": "/VERSION.json",
+    "format": "",
+    "size": 88,
+    "spec": {
+      "description": "Support bundle version information",
+      "output_dir": "/",
+      "version": {}
+    }
+  },
+  {
+    "path": "default/journald/docker/logs.raw",
+    "format": "",
+    "size": 17,
+    "spec": {
+      "journald.logs": {
+        "output_dir": "default/journald/docker",
+        "unit": "docker",
+        "since": "-14 days"
+      }
+    }
+  },
+  {
+    "path": "default/support-bundle/logs",
+    "format": "",
+    "size": 14236,
+    "spec": {
+      "description": "Support bundle logs",
+      "output_dir": "default/support-bundle",
+      "defer": true,
+      "logs": {}
+    }
+  },
+  {
+    "path": "default/support-bundle/goroutines",
+    "format": "",
+    "size": 131339,
+    "spec": {
+      "description": "Support bundle goroutine dump",
+      "output_dir": "default/support-bundle",
+      "defer": true,
+      "goroutines": {}
+    }
+  }
+]

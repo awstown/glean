@@ -1,0 +1,3182 @@
+Print: core-challenge-troubleshoot-analyzers-master/supportbundle.tar.gz
+./
+
+VERSION.json
+{
+  "BuildTime": "2019-05-08T17:31:46Z",
+  "GitSHA": "48ef836",
+  "Version": "0.25.0"
+}
+
+default/
+
+default/commands/
+
+default/commands/date/
+
+default/commands/date/stdout
+Thu May  9 22:00:50 UTC 2019
+
+default/commands/df/
+
+default/commands/df/stdout
+Filesystem     1K-blocks    Used Available Use% Mounted on
+overlay        101445540 2050392  99378764   3% /
+proc                   0       0         0    - /proc
+tmpfs              65536       0     65536   0% /dev
+devpts                 0       0         0    - /dev/pts
+sysfs                  0       0         0    - /sys
+tmpfs            7696712       0   7696712   0% /sys/fs/cgroup
+cgroup                 0       0         0    - /sys/fs/cgroup/systemd
+cgroup                 0       0         0    - /sys/fs/cgroup/net_cls,net_prio
+cgroup                 0       0         0    - /sys/fs/cgroup/rdma
+cgroup                 0       0         0    - /sys/fs/cgroup/cpu,cpuacct
+cgroup                 0       0         0    - /sys/fs/cgroup/pids
+cgroup                 0       0         0    - /sys/fs/cgroup/cpuset
+cgroup                 0       0         0    - /sys/fs/cgroup/perf_event
+cgroup                 0       0         0    - /sys/fs/cgroup/blkio
+cgroup                 0       0         0    - /sys/fs/cgroup/memory
+cgroup                 0       0         0    - /sys/fs/cgroup/hugetlb
+cgroup                 0       0         0    - /sys/fs/cgroup/devices
+cgroup                 0       0         0    - /sys/fs/cgroup/freezer
+mqueue                 0       0         0    - /dev/mqueue
+/dev/sda1      101445540 2050392  99378764   3% /out
+/dev/sda1      101445540 2050392  99378764   3% /etc/resolv.conf
+/dev/sda1      101445540 2050392  99378764   3% /etc/hostname
+/dev/sda1      101445540 2050392  99378764   3% /etc/hosts
+shm                65536       0     65536   0% /dev/shm
+tmpfs            1539344    1004   1538340   1% /run/docker.sock
+devpts                 0       0         0    - /dev/console
+proc                   0       0         0    - /proc/bus
+proc                   0       0         0    - /proc/fs
+proc                   0       0         0    - /proc/irq
+proc                   0       0         0    - /proc/sys
+proc                   0       0         0    - /proc/sysrq-trigger
+tmpfs            7696712       0   7696712   0% /proc/acpi
+tmpfs              65536       0     65536   0% /proc/kcore
+tmpfs              65536       0     65536   0% /proc/keys
+tmpfs              65536       0     65536   0% /proc/timer_list
+tmpfs              65536       0     65536   0% /proc/sched_debug
+tmpfs            7696712       0   7696712   0% /proc/scsi
+tmpfs            7696712       0   7696712   0% /sys/firmware
+
+default/commands/df_inodes/
+
+default/commands/df_inodes/stdout
+Filesystem       Inodes IUsed    IFree IUse% Mounted on
+overlay        12902400 93905 12808495    1% /
+proc                  0     0        0     - /proc
+tmpfs           1924178    17  1924161    1% /dev
+devpts                0     0        0     - /dev/pts
+sysfs                 0     0        0     - /sys
+tmpfs           1924178    17  1924161    1% /sys/fs/cgroup
+cgroup                0     0        0     - /sys/fs/cgroup/systemd
+cgroup                0     0        0     - /sys/fs/cgroup/net_cls,net_prio
+cgroup                0     0        0     - /sys/fs/cgroup/rdma
+cgroup                0     0        0     - /sys/fs/cgroup/cpu,cpuacct
+cgroup                0     0        0     - /sys/fs/cgroup/pids
+cgroup                0     0        0     - /sys/fs/cgroup/cpuset
+cgroup                0     0        0     - /sys/fs/cgroup/perf_event
+cgroup                0     0        0     - /sys/fs/cgroup/blkio
+cgroup                0     0        0     - /sys/fs/cgroup/memory
+cgroup                0     0        0     - /sys/fs/cgroup/hugetlb
+cgroup                0     0        0     - /sys/fs/cgroup/devices
+cgroup                0     0        0     - /sys/fs/cgroup/freezer
+mqueue                0     0        0     - /dev/mqueue
+/dev/sda1      12902400 93907 12808493    1% /out
+/dev/sda1      12902400 93907 12808493    1% /etc/resolv.conf
+/dev/sda1      12902400 93907 12808493    1% /etc/hostname
+/dev/sda1      12902400 93907 12808493    1% /etc/hosts
+shm             1924178     1  1924177    1% /dev/shm
+tmpfs           1924178   600  1923578    1% /run/docker.sock
+devpts                0     0        0     - /dev/console
+proc                  0     0        0     - /proc/bus
+proc                  0     0        0     - /proc/fs
+proc                  0     0        0     - /proc/irq
+proc                  0     0        0     - /proc/sys
+proc                  0     0        0     - /proc/sysrq-trigger
+tmpfs           1924178     1  1924177    1% /proc/acpi
+tmpfs           1924178    17  1924161    1% /proc/kcore
+tmpfs           1924178    17  1924161    1% /proc/keys
+tmpfs           1924178    17  1924161    1% /proc/timer_list
+tmpfs           1924178    17  1924161    1% /proc/sched_debug
+tmpfs           1924178     1  1924177    1% /proc/scsi
+tmpfs           1924178     1  1924177    1% /sys/firmware
+
+default/commands/dmesg/
+
+default/commands/dmesg/stderr
+dmesg: read kernel buffer failed: Operation not permitted
+
+default/commands/free/
+
+default/commands/free/stdout
+              total        used        free      shared  buff/cache   available
+Mem:          15032         360       13312           0        1359       14376
+Swap:             0           0           0
+
+default/commands/hostname/
+
+default/commands/hostname/stdout
+ethan-1
+
+default/commands/ip_addr_show/
+
+default/commands/ip_addr_show/stdout
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft forever preferred_lft forever
+1: lo    inet6 ::1/128 scope host \       valid_lft forever preferred_lft forever
+2: ens4    inet 10.128.0.104/32 scope global dynamic ens4\       valid_lft 85746sec preferred_lft 85746sec
+2: ens4    inet6 fe80::4001:aff:fe80:68/64 scope link \       valid_lft forever preferred_lft forever
+3: docker0    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0\       valid_lft forever preferred_lft forever
+
+default/commands/ip_link_show/
+
+default/commands/ip_link_show/stdout
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP mode DEFAULT group default qlen 1000\    link/ether 42:01:0a:80:00:68 brd ff:ff:ff:ff:ff:ff
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default \    link/ether 02:42:46:d8:b6:f4 brd ff:ff:ff:ff:ff:ff
+
+default/commands/ip_route_show/
+
+default/commands/ip_route_show/stdout
+default via 10.128.0.1 dev ens4 proto dhcp metric 100 
+10.128.0.1 dev ens4 proto dhcp scope link metric 100 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+
+default/commands/loadavg/
+
+default/commands/loadavg/loadavg
+0.26 0.14 0.05 5/233 5186
+
+default/commands/ps/
+
+default/commands/ps/stdout
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         2  0.0  0.0      0     0 ?        S    21:49   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/0:0]
+root         4  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [migration/0]
+root        11  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [cpuhp/1]
+root        14  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [watchdog/1]
+root        15  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [migration/1]
+root        16  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [ksoftirqd/1]
+root        18  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/1:0H]
+root        19  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [cpuhp/2]
+root        20  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [migration/2]
+root        22  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/2:0H]
+root        25  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [watchdog/3]
+root        27  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [migration/3]
+root        28  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [ksoftirqd/3]
+root        29  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/3:0]
+root        30  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/3:0H]
+root        31  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [kdevtmpfs]
+root        32  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [netns]
+root        33  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [rcu_tasks_kthre]
+root        34  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [kauditd]
+root        35  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/0:1]
+root        36  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/1:1]
+root        37  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/2:1]
+root        38  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [khungtaskd]
+root        39  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [oom_reaper]
+root        40  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [writeback]
+root        41  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [kcompactd0]
+root        42  0.0  0.0      0     0 ?        SN   21:49   0:00  \_ [ksmd]
+root        43  0.0  0.0      0     0 ?        SN   21:49   0:00  \_ [khugepaged]
+root        44  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [crypto]
+root        45  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kintegrityd]
+root        46  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kblockd]
+root        47  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [ata_sff]
+root        48  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [md]
+root        49  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [edac-poller]
+root        50  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [devfreq_wq]
+root        51  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [watchdogd]
+root        54  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [kswapd0]
+root        55  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/u9:0]
+root        56  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [ecryptfs-kthrea]
+root        98  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kthrotld]
+root        99  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [acpi_thermal_pm]
+root       100  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [scsi_eh_0]
+root       101  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [scsi_tmf_0]
+root       103  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/u8:2]
+root       108  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [ipv6_addrconf]
+root       117  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kstrp]
+root       134  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [charger_manager]
+root       135  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/0:1H]
+root       188  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/1:2]
+root       229  0.0  0.0      0     0 ?        I    21:49   0:00  \_ [kworker/u8:4]
+root       301  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [raid5wq]
+root       348  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/2:1H]
+root       349  0.0  0.0      0     0 ?        S    21:49   0:00  \_ [jbd2/sda1-8]
+root       350  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [ext4-rsv-conver]
+root       352  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/3:1H]
+root       402  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [kworker/1:1H]
+root       419  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [iscsi_eh]
+root       427  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [ib-comp-wq]
+root       428  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [ib_mcast]
+root       429  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [ib_nl_sa_wq]
+root       431  0.0  0.0      0     0 ?        I<   21:49   0:00  \_ [rdma_cm]
+root      1240  0.0  0.0      0     0 ?        I    21:50   0:00  \_ [kworker/2:2]
+root      1307  0.0  0.0      0     0 ?        I    21:50   0:00  \_ [kworker/3:2]
+root      1888  0.0  0.0      0     0 ?        S<   21:50   0:00  \_ [loop0]
+root      2099  0.0  0.0      0     0 ?        S<   21:50   0:00  \_ [loop1]
+root      2521  0.0  0.0      0     0 ?        I    21:57   0:00  \_ [kworker/u8:0]
+root      3134  0.1  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/u8:1]
+root      3135  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/u8:3]
+root      3635  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/2:0]
+root      3636  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/2:3]
+root      3637  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/2:4]
+root      3638  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/2:5]
+root      3639  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/2:6]
+root      3640  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/2:7]
+root      3665  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/3:1]
+root      3667  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/3:3]
+root      3671  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/3:4]
+root      3672  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/3:5]
+root      3673  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/3:6]
+root      3674  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/3:7]
+root      3742  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/1:0]
+root      3743  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/1:3]
+root      3744  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/1:4]
+root      3745  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/1:5]
+root      3746  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/1:6]
+root      3747  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/1:7]
+root      4635  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/0:2]
+root      4637  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/0:3]
+root      4638  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/0:4]
+root      4639  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/0:5]
+root      4640  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/0:6]
+root      4641  0.0  0.0      0     0 ?        I    21:58   0:00  \_ [kworker/0:7]
+root         1  0.4  0.0 225528  9328 ?        Ss   21:49   0:02 /sbin/init
+root       417  0.0  0.0  94848  8468 ?        S<s  21:49   0:00 /lib/systemd/systemd-journald
+root       436  0.0  0.0  97708  1852 ?        Ss   21:49   0:00 /sbin/lvmetad -f
+root       445  0.1  0.0  43332  4356 ?        Ss   21:49   0:00 /lib/systemd/systemd-udevd
+_apt       731  0.0  0.0  80040  5308 ?        Ss   21:49   0:00 /lib/systemd/systemd-networkd
+systemd+   764  0.0  0.0  70736  6264 ?        Ss   21:49   0:00 /lib/systemd/systemd-resolved
+systemd+   935  0.0  0.0  50096  4132 ?        Ss   21:50   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       967  0.0  0.0 288096  7088 ?        Ssl  21:50   0:00 /usr/lib/accountsservice/accounts-daemon
+root      1001  0.0  0.0  95540  1672 ?        Ssl  21:50   0:00 /usr/bin/lxcfs /var/lib/lxcfs/
+daemon    1061  0.0  0.0  28332  2440 ?        Ss   21:50   0:00 /usr/sbin/atd -f
+root      1078  0.0  0.0  31748  3216 ?        Ss   21:50   0:00 /usr/sbin/cron -f
+root      1087  0.0  0.1 170820 17180 ?        Ssl  21:50   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+systemd+  1103  0.0  0.0 267268  4508 ?        Ssl  21:50   0:00 /usr/sbin/rsyslogd -n
+root      1109  0.0  0.0  70576  6044 ?        Ss   21:50   0:00 /lib/systemd/systemd-logind
+root      1229  0.0  0.0   4628   772 ?        Ss   21:50   0:00 /bin/sh /usr/lib/sshguard/sshguard-journalctl -i /run/sshguard.pid -w /etc/sshguard/whitelist -a 40 -p 420 -s 1200
+root      1230  0.0  0.0  81640  5528 ?        S    21:50   0:00  \_ /bin/journalctl -afb -p info -n1 -o cat SYSLOG_FACILITY=4 SYSLOG_FACILITY=10
+root      1231  0.0  0.0  16364  2348 ?        Sl   21:50   0:00  \_ /usr/sbin/sshguard -i /run/sshguard.pid -w /etc/sshguard/whitelist -a 40 -p 420 -s 1200
+root      1236  0.0  0.0   4628   808 ?        S    21:50   0:00      \_ /bin/sh /usr/lib/x86_64-linux-gnu/sshg-fw
+root      1275  0.0  0.1 187652 20224 ?        Ssl  21:50   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root      1277  0.0  0.0 291388  7340 ?        Ssl  21:50   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root      1294  0.0  0.0  16412  2320 ?        Ss+  21:50   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root      1303  0.0  0.0  14888  1980 ?        Ss+  21:50   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root      1380  0.0  0.1  75004 23176 ?        Ss   21:50   0:00 /usr/bin/python3 /usr/bin/google_network_daemon
+root      1382  0.0  0.1  79652 23644 ?        Ss   21:50   0:00 /usr/bin/python3 /usr/bin/google_accounts_daemon
+root      1385  0.0  0.1  74872 23408 ?        Ss   21:50   0:00 /usr/bin/python3 /usr/bin/google_clock_skew_daemon
+root      1573  0.0  0.0  72296  6480 ?        Ss   21:50   0:00 /usr/sbin/sshd -D
+root      2307  0.0  0.0 107984  7240 ?        Ss   21:50   0:00  \_ sshd: ethan [priv]
+1003      2440  0.0  0.0 107984  3480 ?        S    21:50   0:00      \_ sshd: ethan@pts/0
+1003      2441  0.0  0.0  23164  5460 pts/0    Ss   21:50   0:00          \_ -bash
+root      5101  0.0  0.0  68112  4528 pts/0    S+   22:00   0:00              \_ sudo docker run -it --rm --name support-bundle --volume /home/ethan:/out --volume /var/run/docker.sock:/var/run/docker.sock --net host --pid host --workdir /out -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY replicated/support-bundle generate --no-upload
+root      5102  6.0  0.3 895792 50632 pts/0    Sl+  22:00   0:00                  \_ docker run -it --rm --name support-bundle --volume /home/ethan:/out --volume /var/run/docker.sock:/var/run/docker.sock --net host --pid host --workdir /out -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY replicated/support-bundle generate --no-upload
+root      1961  0.1  0.1 1142224 22868 ?       Ssl  21:50   0:01 /usr/lib/snapd/snapd
+111       2208  0.0  0.0 101332  2652 ?        S    21:50   0:00 /usr/sbin/chronyd
+1003      2318  0.0  0.0  76640  7728 ?        Ss   21:50   0:00 /lib/systemd/systemd --user
+1003      2327  0.0  0.0 259364  2604 ?        S    21:50   0:00  \_ (sd-pam)
+root      3678  0.3  0.2 1105936 42588 ?       Ssl  21:58   0:00 /usr/bin/containerd
+root      5112  1.0  0.0   9196  5232 ?        Sl   22:00   0:00  \_ containerd-shim -namespace moby -workdir /var/lib/containerd/io.containerd.runtime.v1.linux/moby/0a157d3ed6717e994ff891da90de36f8b1a662aa48461cea57b266daf73fe80d -address /run/containerd/containerd.sock -containerd-binary /usr/bin/containerd -runtime-root /var/run/docker/runtime-runc
+root      5136 14.0  0.1 519512 24504 pts/0    Ssl+ 22:00   0:00      \_ support-bundle generate --no-upload
+root      5212  0.0  0.0  36776  2984 pts/0    R+   22:00   0:00          \_ ps fauxwww
+root      4670 10.8  0.5 1177400 92332 ?       Ssl  21:58   0:13 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root      5176  2.0  0.0      0     0 ?        Z    22:00   0:00  \_ [runc] <defunct>
+
+default/commands/uptime/
+
+default/commands/uptime/uptime
+661.98 2560.24
+
+default/docker/
+
+default/docker/container_ls.json
+[
+  {
+    "Command": "support-bundle generate --no-upload",
+    "Created": 1557439249,
+    "HostConfig": {
+      "NetworkMode": "host"
+    },
+    "Id": "0a157d3ed6717e994ff891da90de36f8b1a662aa48461cea57b266daf73fe80d",
+    "Image": "replicated/support-bundle",
+    "ImageID": "sha256:1602dde299a70e3079768b0044667632186372adad55b15bba507f71ecbbb4ca",
+    "Labels": {
+      "com.replicated.support-bundle": "true"
+    },
+    "Mounts": [
+      {
+        "Destination": "/out",
+        "Mode": "",
+        "Propagation": "rprivate",
+        "RW": true,
+        "Source": "/home/ethan",
+        "Type": "bind"
+      },
+      {
+        "Destination": "/var/run/docker.sock",
+        "Mode": "",
+        "Propagation": "rprivate",
+        "RW": true,
+        "Source": "/var/run/docker.sock",
+        "Type": "bind"
+      }
+    ],
+    "Names": [
+      "/support-bundle"
+    ],
+    "NetworkSettings": {
+      "Networks": {
+        "host": {
+          "Aliases": null,
+          "DriverOpts": null,
+          "EndpointID": "",
+          "Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "IPAMConfig": null,
+          "IPAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "Links": null,
+          "MacAddress": "",
+          "NetworkID": ""
+        }
+      }
+    },
+    "Ports": [],
+    "State": "created",
+    "Status": "Created"
+  }
+]
+
+default/docker/docker_info.json
+{
+  "Architecture": "x86_64",
+  "BridgeNfIp6tables": true,
+  "BridgeNfIptables": true,
+  "CPUSet": true,
+  "CPUShares": true,
+  "CgroupDriver": "cgroupfs",
+  "ClusterAdvertise": "",
+  "ClusterStore": "",
+  "ContainerdCommit": {
+    "Expected": "bb71b10fd8f58240ca47fbb579b9d1028eea7c84",
+    "ID": "bb71b10fd8f58240ca47fbb579b9d1028eea7c84"
+  },
+  "Containers": 1,
+  "ContainersPaused": 0,
+  "ContainersRunning": 1,
+  "ContainersStopped": 0,
+  "CpuCfsPeriod": true,
+  "CpuCfsQuota": true,
+  "Debug": false,
+  "DefaultRuntime": "runc",
+  "DockerRootDir": "/var/lib/docker",
+  "Driver": "overlay2",
+  "DriverStatus": [
+    [
+      "Backing Filesystem",
+      "extfs"
+    ],
+    [
+      "Supports d_type",
+      "true"
+    ],
+    [
+      "Native Overlay Diff",
+      "true"
+    ]
+  ],
+  "ExperimentalBuild": false,
+  "GenericResources": null,
+  "HttpProxy": "",
+  "HttpsProxy": "",
+  "ID": "TNOE:IDBR:V54O:VKOL:KUXU:AXIP:S632:4FYT:CDBW:KZ4L:23VP:LBCP",
+  "IPv4Forwarding": true,
+  "Images": 1,
+  "IndexServerAddress": "https://index.docker.io/v1/",
+  "InitBinary": "docker-init",
+  "InitCommit": {
+    "Expected": "fec3683",
+    "ID": "fec3683"
+  },
+  "Isolation": "",
+  "KernelMemory": true,
+  "KernelVersion": "4.15.0-1030-gcp",
+  "Labels": [],
+  "LiveRestoreEnabled": false,
+  "LoggingDriver": "json-file",
+  "MemTotal": 15762866176,
+  "MemoryLimit": true,
+  "NCPU": 4,
+  "NEventsListener": 0,
+  "NFd": 32,
+  "NGoroutines": 55,
+  "Name": "ethan-1",
+  "NoProxy": "",
+  "OSType": "linux",
+  "OomKillDisable": true,
+  "OperatingSystem": "Ubuntu 18.04.2 LTS",
+  "Plugins": {
+    "Authorization": null,
+    "Log": [
+      "awslogs",
+      "fluentd",
+      "gcplogs",
+      "gelf",
+      "journald",
+      "json-file",
+      "local",
+      "logentries",
+      "splunk",
+      "syslog"
+    ],
+    "Network": [
+      "bridge",
+      "host",
+      "macvlan",
+      "null",
+      "overlay"
+    ],
+    "Volume": [
+      "local"
+    ]
+  },
+  "RegistryConfig": {
+    "AllowNondistributableArtifactsCIDRs": [],
+    "AllowNondistributableArtifactsHostnames": [],
+    "IndexConfigs": {
+      "docker.io": {
+        "Mirrors": [],
+        "Name": "docker.io",
+        "Official": true,
+        "Secure": true
+      }
+    },
+    "InsecureRegistryCIDRs": [
+      "127.0.0.0/8"
+    ],
+    "Mirrors": []
+  },
+  "RuncCommit": {
+    "Expected": "2b18fe1d885ee5083ef9f0838fee39b62d653e30",
+    "ID": "2b18fe1d885ee5083ef9f0838fee39b62d653e30"
+  },
+  "Runtimes": {
+    "runc": {
+      "path": "runc"
+    }
+  },
+  "SecurityOptions": [
+    "name=apparmor",
+    "name=seccomp,profile=default"
+  ],
+  "ServerVersion": "18.09.6",
+  "SwapLimit": false,
+  "Swarm": {
+    "ControlAvailable": false,
+    "Error": "",
+    "LocalNodeState": "inactive",
+    "NodeAddr": "",
+    "NodeID": "",
+    "RemoteManagers": null
+  },
+  "SystemStatus": null,
+  "SystemTime": "2019-05-09T22:00:50.004961757Z"
+}
+
+default/docker/docker_version.json
+{
+  "ApiVersion": "1.39",
+  "Arch": "amd64",
+  "BuildTime": "2019-05-04T01:59:36.000000000+00:00",
+  "GitCommit": "481bc77",
+  "GoVersion": "go1.10.8",
+  "KernelVersion": "4.15.0-1030-gcp",
+  "MinAPIVersion": "1.12",
+  "Os": "linux",
+  "Version": "18.09.6"
+}
+
+default/docker/image_ls.json
+[
+  {
+    "Containers": -1,
+    "Created": 1557336715,
+    "Id": "sha256:1602dde299a70e3079768b0044667632186372adad55b15bba507f71ecbbb4ca",
+    "Labels": {
+      "com.replicated.support-bundle": "true"
+    },
+    "ParentId": "",
+    "RepoDigests": [
+      "replicated/support-bundle@sha256:4ca13b02684c7ceb0caabc23e7a342f877e2b8359826987bcc42511bcc784317"
+    ],
+    "RepoTags": [
+      "replicated/support-bundle:latest"
+    ],
+    "SharedSize": -1,
+    "Size": 373238528,
+    "VirtualSize": 373238528
+  }
+]
+
+default/etc/
+
+default/etc/default/
+
+default/etc/default/docker
+# Docker Upstart and SysVinit configuration file
+
+#
+# THIS FILE DOES NOT APPLY TO SYSTEMD
+#
+#   Please see the documentation for "systemd drop-ins":
+#   https://docs.docker.com/engine/admin/systemd/
+#
+
+# Customize location of Docker binary (especially for development testing).
+#DOCKERD="/usr/local/bin/dockerd"
+
+# Use DOCKER_OPTS to modify the daemon startup options.
+#DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
+
+# If you need Docker to use an HTTP proxy, it can also be specified here.
+#export http_proxy="http://127.0.0.1:3128/"
+
+# This is also a handy place to tweak where Docker's temporary files go.
+#export DOCKER_TMPDIR="/mnt/bigdrive/docker-tmp"
+
+default/etc/fstab
+LABEL=cloudimg-rootfs	/	 ext4	defaults	0 0
+LABEL=UEFI	/boot/efi	vfat	defaults	0 0
+
+default/etc/hostname
+ethan-1
+
+default/etc/hosts
+127.0.0.1 localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+169.254.169.254 metadata.google.internal metadata
+
+default/etc/timezone
+Etc/UTC
+
+default/journald/
+
+default/journald/docker/
+
+default/journald/docker/logs.raw
+-- Logs begin at Thu 2019-05-09 21:49:51 UTC, end at Thu 2019-05-09 22:00:59 UTC. --
+May 09 21:58:46 ethan-1 systemd[1]: Starting Docker Application Container Engine...
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.214197631Z" level=info msg="systemd-resolved is running, so using resolvconf: /run/systemd/resolve/resolv.conf"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253433008Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253484273Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253618550Z" level=info msg="parsed scheme: \"unix\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253628034Z" level=info msg="scheme \"unix\" not registered, fallback to default scheme" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253809041Z" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///run/containerd/containerd.sock 0  <nil>}]" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253871594Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253919618Z" level=info msg="ccResolverWrapper: sending new addresses to cc: [{unix:///run/containerd/containerd.sock 0  <nil>}]" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253963549Z" level=info msg="ClientConn switching balancer to \"pick_first\"" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.254068742Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc4207b3330, CONNECTING" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.253945542Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc42075d120, CONNECTING" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.254310389Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc4207b3330, READY" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.254993404Z" level=info msg="pickfirstBalancer: HandleSubConnStateChange: 0xc42075d120, READY" module=grpc
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327252943Z" level=info msg="Graph migration to content-addressability took 0.00 seconds"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327672587Z" level=warning msg="Your kernel does not support swap memory limit"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327748386Z" level=warning msg="Your kernel does not support cgroup rt period"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.327758846Z" level=warning msg="Your kernel does not support cgroup rt runtime"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.328490324Z" level=info msg="Loading containers: start."
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.631785716Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+May 09 21:58:46 ethan-1 dockerd[4670]: time="2019-05-09T21:58:46.874284586Z" level=info msg="Loading containers: done."
+May 09 21:58:48 ethan-1 dockerd[4670]: time="2019-05-09T21:58:48.231430142Z" level=info msg="Docker daemon" commit=481bc77 graphdriver(s)=overlay2 version=18.09.6
+May 09 21:58:48 ethan-1 dockerd[4670]: time="2019-05-09T21:58:48.231814429Z" level=info msg="Daemon has completed initialization"
+May 09 21:58:48 ethan-1 dockerd[4670]: time="2019-05-09T21:58:48.277079515Z" level=info msg="API listen on /var/run/docker.sock"
+May 09 21:58:48 ethan-1 systemd[1]: Started Docker Application Container Engine.
+May 09 22:00:25 ethan-1 dockerd[4670]: time="2019-05-09T22:00:25.987565676Z" level=error msg="Handler for POST /v1.39/containers/4e577094b69d66aba40adaba254ff30ef0269efb1b83ebf03928e0e6f3e7426f/resize returned error: bad file descriptor: unknown"
+May 09 22:00:25 ethan-1 dockerd[4670]: time="2019-05-09T22:00:25.999762838Z" level=error msg="Handler for POST /v1.39/containers/4e577094b69d66aba40adaba254ff30ef0269efb1b83ebf03928e0e6f3e7426f/resize returned error: bad file descriptor: unknown"
+May 09 22:00:26 ethan-1 dockerd[4670]: time="2019-05-09T22:00:26.011944043Z" level=error msg="Handler for POST /v1.39/containers/4e577094b69d66aba40adaba254ff30ef0269efb1b83ebf03928e0e6f3e7426f/resize returned error: bad file descriptor: unknown"
+May 09 22:00:26 ethan-1 dockerd[4670]: time="2019-05-09T22:00:26.068291385Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.000948663Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.001020329Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.001767325Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.001836574Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.002471681Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.002517253Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.003104199Z" level=error msg="Error getting services: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:50 ethan-1 dockerd[4670]: time="2019-05-09T22:00:50.003141957Z" level=error msg="Handler for GET /v1.35/services returned error: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+May 09 22:00:51 ethan-1 dockerd[4670]: time="2019-05-09T22:00:51.482626999Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.243012359Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.417182961Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.908075010Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:52 ethan-1 dockerd[4670]: time="2019-05-09T22:00:52.985843886Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.007207444Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.388051321Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.455035651Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.455095887Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.609105545Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:53 ethan-1 dockerd[4670]: time="2019-05-09T22:00:53.826319848Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:54 ethan-1 dockerd[4670]: time="2019-05-09T22:00:54.282251542Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:55 ethan-1 dockerd[4670]: time="2019-05-09T22:00:55.194607959Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:55 ethan-1 dockerd[4670]: time="2019-05-09T22:00:55.954662683Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:56 ethan-1 dockerd[4670]: time="2019-05-09T22:00:56.251640457Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:56 ethan-1 dockerd[4670]: time="2019-05-09T22:00:56.377211622Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.233161801Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.370505581Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.423852362Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:57 ethan-1 dockerd[4670]: time="2019-05-09T22:00:57.425619786Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:58 ethan-1 dockerd[4670]: time="2019-05-09T22:00:58.038842204Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:58 ethan-1 dockerd[4670]: time="2019-05-09T22:00:58.523820360Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+May 09 22:00:58 ethan-1 dockerd[4670]: time="2019-05-09T22:00:58.609918370Z" level=info msg="ignoring event" module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+
+default/kubernetes/
+
+default/kubernetes/kubelet/
+
+default/kubernetes/kubelet/logs/
+
+default/kubernetes/kubelet/logs/logs.raw
+-- No entries --
+
+default/proc/
+
+default/proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU @ 2.30GHz
+stepping	: 0
+microcode	: 0x1
+cpu MHz		: 2300.000
+cache size	: 46080 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU @ 2.30GHz
+stepping	: 0
+microcode	: 0x1
+cpu MHz		: 2300.000
+cache size	: 46080 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU @ 2.30GHz
+stepping	: 0
+microcode	: 0x1
+cpu MHz		: 2300.000
+cache size	: 46080 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU @ 2.30GHz
+stepping	: 0
+microcode	: 0x1
+cpu MHz		: 2300.000
+cache size	: 46080 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf
+bogomips	: 4600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+
+default/proc/meminfo
+MemTotal:       15393424 kB
+MemFree:        13630144 kB
+MemAvailable:   14719140 kB
+Buffers:           58616 kB
+Cached:          1228632 kB
+SwapCached:            0 kB
+Active:           635068 kB
+Inactive:         848380 kB
+Active(anon):     196988 kB
+Inactive(anon):      212 kB
+Active(file):     438080 kB
+Inactive(file):   848168 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               180 kB
+Writeback:             0 kB
+AnonPages:        195776 kB
+Mapped:           168220 kB
+Shmem:              1004 kB
+Slab:             155896 kB
+SReclaimable:     104904 kB
+SUnreclaim:        50992 kB
+KernelStack:        4036 kB
+PageTables:         5716 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     7696712 kB
+Committed_AS:    1094692 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      126964 kB
+DirectMap2M:     5115904 kB
+DirectMap1G:    12582912 kB
+
+default/proc/mounts
+overlay / overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/QB6EXHD2FBYZNWPJLLTGUHWEAL:/var/lib/docker/overlay2/l/SIPHMTKVSFCIZFC4SUZMZAMXDS:/var/lib/docker/overlay2/l/XTR3UCKPJ7HTNWQQ4PVHTX5VCC:/var/lib/docker/overlay2/l/QYAOUWIPRWNESR64QWC5Z6G236:/var/lib/docker/overlay2/l/UDM2TGTLLWKXQBJKBHTSQHAMHV:/var/lib/docker/overlay2/l/FAZCS6URL4QMBSE5C3KDO6SSM5,upperdir=/var/lib/docker/overlay2/9c68af30e37e382e1bdc733ee5edf4d1d8b1d293e92a9cf4ecdc56f14243d8cc/diff,workdir=/var/lib/docker/overlay2/9c68af30e37e382e1bdc733ee5edf4d1d8b1d293e92a9cf4ecdc56f14243d8cc/work 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev tmpfs rw,nosuid,size=65536k,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666 0 0
+sysfs /sys sysfs ro,nosuid,nodev,noexec,relatime 0 0
+tmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,relatime,mode=755 0 0
+cgroup /sys/fs/cgroup/systemd cgroup ro,nosuid,nodev,noexec,relatime,xattr,name=systemd 0 0
+cgroup /sys/fs/cgroup/net_cls,net_prio cgroup ro,nosuid,nodev,noexec,relatime,net_cls,net_prio 0 0
+cgroup /sys/fs/cgroup/rdma cgroup ro,nosuid,nodev,noexec,relatime,rdma 0 0
+cgroup /sys/fs/cgroup/cpu,cpuacct cgroup ro,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0
+cgroup /sys/fs/cgroup/pids cgroup ro,nosuid,nodev,noexec,relatime,pids 0 0
+cgroup /sys/fs/cgroup/cpuset cgroup ro,nosuid,nodev,noexec,relatime,cpuset 0 0
+cgroup /sys/fs/cgroup/perf_event cgroup ro,nosuid,nodev,noexec,relatime,perf_event 0 0
+cgroup /sys/fs/cgroup/blkio cgroup ro,nosuid,nodev,noexec,relatime,blkio 0 0
+cgroup /sys/fs/cgroup/memory cgroup ro,nosuid,nodev,noexec,relatime,memory 0 0
+cgroup /sys/fs/cgroup/hugetlb cgroup ro,nosuid,nodev,noexec,relatime,hugetlb 0 0
+cgroup /sys/fs/cgroup/devices cgroup ro,nosuid,nodev,noexec,relatime,devices 0 0
+cgroup /sys/fs/cgroup/freezer cgroup ro,nosuid,nodev,noexec,relatime,freezer 0 0
+mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
+/dev/sda1 /out ext4 rw,relatime,data=ordered 0 0
+/dev/sda1 /etc/resolv.conf ext4 rw,relatime,data=ordered 0 0
+/dev/sda1 /etc/hostname ext4 rw,relatime,data=ordered 0 0
+/dev/sda1 /etc/hosts ext4 rw,relatime,data=ordered 0 0
+shm /dev/shm tmpfs rw,nosuid,nodev,noexec,relatime,size=65536k 0 0
+tmpfs /run/docker.sock tmpfs rw,nosuid,noexec,relatime,size=1539344k,mode=755 0 0
+devpts /dev/console devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666 0 0
+proc /proc/bus proc ro,relatime 0 0
+proc /proc/fs proc ro,relatime 0 0
+proc /proc/irq proc ro,relatime 0 0
+proc /proc/sys proc ro,relatime 0 0
+proc /proc/sysrq-trigger proc ro,relatime 0 0
+tmpfs /proc/acpi tmpfs ro,relatime 0 0
+tmpfs /proc/kcore tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/keys tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/timer_list tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/sched_debug tmpfs rw,nosuid,size=65536k,mode=755 0 0
+tmpfs /proc/scsi tmpfs ro,relatime 0 0
+tmpfs /sys/firmware tmpfs ro,relatime 0 0
+
+default/proc/uptime
+661.98 2560.24
+
+default/proc/version
+Linux version 4.15.0-1030-gcp (buildd@lgw01-amd64-042) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #32-Ubuntu SMP Wed Apr 10 10:27:45 UTC 2019
+
+default/proc/vmstat
+nr_free_pages 3407726
+nr_zone_inactive_anon 53
+nr_zone_active_anon 49149
+nr_zone_inactive_file 212091
+nr_zone_active_file 109471
+nr_zone_unevictable 0
+nr_zone_write_pending 45
+nr_mlock 0
+nr_page_table_pages 1429
+nr_kernel_stack 3984
+nr_bounce 0
+nr_zspages 0
+nr_free_cma 0
+numa_hit 1609950
+numa_miss 0
+numa_foreign 0
+numa_interleave 22463
+numa_local 1609950
+numa_other 0
+nr_inactive_anon 53
+nr_active_anon 49149
+nr_inactive_file 212091
+nr_active_file 109471
+nr_unevictable 0
+nr_slab_reclaimable 26226
+nr_slab_unreclaimable 12643
+nr_isolated_anon 0
+nr_isolated_file 0
+workingset_refault 0
+workingset_activate 0
+workingset_nodereclaim 0
+nr_anon_pages 48919
+nr_mapped 42006
+nr_file_pages 321812
+nr_dirty 45
+nr_writeback 0
+nr_writeback_temp 0
+nr_shmem 251
+nr_shmem_hugepages 0
+nr_shmem_pmdmapped 0
+nr_anon_transparent_hugepages 0
+nr_unstable 0
+nr_vmscan_write 0
+nr_vmscan_immediate_reclaim 0
+nr_dirtied 323457
+nr_written 262573
+nr_dirty_threshold 737415
+nr_dirty_background_threshold 368257
+pgpgin 365683
+pgpgout 1114217
+pswpin 0
+pswpout 0
+pgalloc_dma 0
+pgalloc_dma32 0
+pgalloc_normal 1737035
+pgalloc_movable 0
+allocstall_dma 0
+allocstall_dma32 0
+allocstall_normal 0
+allocstall_movable 0
+pgskip_dma 0
+pgskip_dma32 0
+pgskip_normal 0
+pgskip_movable 0
+pgfree 5145247
+pgactivate 135012
+pgdeactivate 0
+pglazyfree 0
+pgfault 1672139
+pgmajfault 1198
+pglazyfreed 0
+pgrefill 0
+pgsteal_kswapd 0
+pgsteal_direct 0
+pgscan_kswapd 0
+pgscan_direct 0
+pgscan_direct_throttle 0
+zone_reclaim_failed 0
+pginodesteal 0
+slabs_scanned 0
+kswapd_inodesteal 0
+kswapd_low_wmark_hit_quickly 0
+kswapd_high_wmark_hit_quickly 0
+pageoutrun 0
+pgrotated 0
+drop_pagecache 0
+drop_slab 0
+oom_kill 0
+numa_pte_updates 0
+numa_huge_pte_updates 0
+numa_hint_faults 0
+numa_hint_faults_local 0
+numa_pages_migrated 0
+pgmigrate_success 0
+pgmigrate_fail 0
+compact_migrate_scanned 0
+compact_free_scanned 0
+compact_isolated 0
+compact_stall 0
+compact_fail 0
+compact_success 0
+compact_daemon_wake 0
+compact_daemon_migrate_scanned 0
+compact_daemon_free_scanned 0
+htlb_buddy_alloc_success 0
+htlb_buddy_alloc_fail 0
+unevictable_pgs_culled 17
+unevictable_pgs_scanned 0
+unevictable_pgs_rescued 272
+unevictable_pgs_mlocked 272
+unevictable_pgs_munlocked 272
+unevictable_pgs_cleared 0
+unevictable_pgs_stranded 0
+thp_fault_alloc 0
+thp_fault_fallback 0
+thp_collapse_alloc 0
+thp_collapse_alloc_failed 0
+thp_file_alloc 0
+thp_file_mapped 0
+thp_split_page 0
+thp_split_page_failed 0
+thp_deferred_split_page 0
+thp_split_pmd 0
+thp_split_pud 0
+thp_zero_page_alloc 0
+thp_zero_page_alloc_failed 0
+thp_swpout 0
+thp_swpout_fallback 0
+balloon_inflate 0
+balloon_deflate 0
+balloon_migrate 0
+swap_ra 0
+swap_ra_hit 0
+
+default/support-bundle/
+
+default/support-bundle/goroutines
+goroutine 448 [running]:
+runtime/pprof.writeGoroutineStacks(0x1466b80, 0xc4203e9490, 0xd0, 0xd0)
+	/usr/local/go/src/runtime/pprof/pprof.go:650 +0xa7
+runtime/pprof.writeGoroutine(0x1466b80, 0xc4203e9490, 0x2, 0x30, 0xc4202c57b8)
+	/usr/local/go/src/runtime/pprof/pprof.go:639 +0x44
+runtime/pprof.(*Profile).WriteTo(0x1c70800, 0x1466b80, 0xc4203e9490, 0x2, 0x0, 0xc4202c5928)
+	/usr/local/go/src/runtime/pprof/pprof.go:310 +0x3e4
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/producers.(*SupportBundle).Goroutines(0xc4201880e0, 0x14810c0, 0xc4201fec00, 0xc4204a8480, 0xc42052c000, 0x1341580, 0xc42013ea80)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/producers/goroutines.go:17 +0xf0
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/producers.(*SupportBundle).Goroutines-fm(0x14810c0, 0xc4201fec00, 0xc4207d4210, 0xc4202c5998, 0x42b099, 0xc42052c030)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/supportbundle/planners/goroutines.go:12 +0x3e
+github.com/replicatedcom/support-bundle/pkg/collect/plans.(*StreamSource).Exec.func1(0x14810c0, 0xc4201fec00, 0xc4202dc0a0, 0x72, 0x96)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plans/stream_source.go:53 +0x42
+github.com/replicatedcom/support-bundle/pkg/collect/plans.(*StreamsSource).Exec(0xc4204ee480, 0x14810c0, 0xc4201fec00, 0xc42020e580, 0x9, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plans/streams_source.go:83 +0x298
+github.com/replicatedcom/support-bundle/pkg/collect/plans.(*StreamSource).Exec(0xc4204d6900, 0x14810c0, 0xc4201fec00, 0xc42020e580, 0x9, 0x1, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plans/stream_source.go:59 +0x23b
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec.func1(0xc4201fec60, 0x14810c0, 0xc4201fec00, 0xc42020e580, 0x9, 0x146b7e0, 0xc4204d6900)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:73 +0x69
+created by github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:72 +0x184
+
+goroutine 1 [chan receive]:
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec(0x14810c0, 0xc4201fe960, 0xc42020e580, 0x9, 0xc420358ae0, 0x2, 0x2, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:92 +0x317
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.Exec(0x14810c0, 0xc4201829c0, 0xc42020e580, 0x9, 0xc420092800, 0x34, 0x40, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:55 +0x658
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.Generate(0xc420092800, 0x34, 0x40, 0xdf8475800, 0x1358f00, 0x14, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/generate.go:44 +0x22e
+github.com/replicatedcom/support-bundle/pkg/collect/lifecycle.(*GenerateTask).Execute(0xc42020e54d, 0xc4200e6b00, 0xc4203f2501, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/lifecycle/generate.go:17 +0x66
+github.com/replicatedcom/support-bundle/pkg/collect/lifecycle.(*Lifecycle).Run(0xc4200e6b00, 0x1c74ee0, 0x3)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/lifecycle/lifecycle.go:67 +0x7e
+github.com/replicatedcom/support-bundle/pkg/collect/cli.(*Cli).Generate(0x1ca2d60, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1358f00, 0x14, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/cli/generate.go:141 +0x49a
+github.com/replicatedcom/support-bundle/cmd/support-bundle/commands.NewGenerateCommand.func1(0xc420256000, 0xc4203ed100, 0x0, 0x1, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/cmd/support-bundle/commands/generate.go:16 +0x60
+github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra.(*Command).execute(0xc420256000, 0xc4203ed0e0, 0x1, 0x1, 0xc420256000, 0xc4203ed0e0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra/command.go:762 +0x468
+github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0xc420179400, 0xc420179400, 0xc4203ed090, 0xc420184460)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra/command.go:852 +0x30a
+github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra.(*Command).Execute(0xc420179400, 0xc420179400, 0xc4200a0058)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/spf13/cobra/command.go:800 +0x2b
+main.main()
+	/go/src/github.com/replicatedcom/support-bundle/cmd/support-bundle/main.go:12 +0x49
+
+goroutine 5 [chan receive]:
+github.com/replicatedcom/support-bundle/vendor/k8s.io/klog.(*loggingT).flushDaemon(0x1c847c0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/k8s.io/klog/klog.go:941 +0x8b
+created by github.com/replicatedcom/support-bundle/vendor/k8s.io/klog.init.0
+	/go/src/github.com/replicatedcom/support-bundle/vendor/k8s.io/klog/klog.go:403 +0x69
+
+goroutine 501 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4203d57c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc420149a00, 0x1466b40, 0xc4203b5500, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4202a2a20)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 22 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2f00, 0x72, 0xc4200659a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420141018, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420141018, 0xc4203f5000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420141000, 0xc4203f5000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420141000, 0xc4203f5000, 0x1000, 0x1000, 0x454a60, 0xc420297680, 0x4)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc4202362d0, 0xc4203f5000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203eec60, 0xc4203f5000, 0x1000, 0x1000, 0xc420065b98, 0x405195, 0xc4200a0600)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ac000)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ac000, 0x1, 0x0, 0x0, 0x0, 0xc4204cf200, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203eec60)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 23 [select]:
+net/http.(*persistConn).writeLoop(0xc4203eec60)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 436 [select]:
+io.(*pipe).Write(0xc4202087d0, 0xc420508808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc42020a158, 0xc420508008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc42020a158, 0x1468760, 0xc42020a168, 0x1466b20, 0xc420638060, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc42020a158, 0xc42020a168, 0xc420364240)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 345 [select]:
+net/http.(*persistConn).roundTrip(0xc42025e5a0, 0xc4204abe90, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207da700, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207da700, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc4201885c8, 0x0, 0xc4207b9850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207da700, 0x0, 0x0, 0x0, 0xc4201885c8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207da700, 0xc420040048, 0xc4207da700, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207da600, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207da600, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d360, 0x4c, 0xc4207b9db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d360, 0x4c, 0xc4207b9db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144780, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144780, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 514 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207dc7c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc42060ff00, 0x1466b40, 0xc4206266c0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc42025e240)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 504 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207e0fc4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc420149c00, 0x1466b40, 0xc4203b5540, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4202a2b40)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 489 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ab440)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 491 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9bfd0, 0x72, 0xc4205d89a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4204f1d18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4204f1d18, 0xc420737000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4204f1d00, 0xc420737000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4204f1d00, 0xc420737000, 0x1000, 0x1000, 0xc4201f3228, 0xc420230d00, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a738, 0xc420737000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ab7a0, 0xc420737000, 0x1000, 0x1000, 0x40, 0xc4205d8b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ace40)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ace40, 0x1, 0xc4208017a0, 0xc4203d7480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ab7a0)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 420 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ef8c0)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 283 [select]:
+net/http.(*persistConn).roundTrip(0xc4203abb00, 0xc420241020, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060fd00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060fd00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a778, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060fd00, 0x0, 0x0, 0x0, 0xc42020a778, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060fd00, 0xc420040048, 0xc42060fd00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060fc00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060fc00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704500, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704500, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522080, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522080, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 340 [select]:
+net/http.(*persistConn).roundTrip(0xc4203330e0, 0xc42052b5c0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149400, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149400, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e2d8, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149400, 0x0, 0x0, 0x0, 0xc42000e2d8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149400, 0xc420040048, 0xc420149400, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149300, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149300, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e4b0, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e4b0, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144680, 0x40, 0x10001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144680, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 339 [select]:
+net/http.(*persistConn).roundTrip(0xc420333c20, 0xc42052b740, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149600, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149600, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e300, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149600, 0x0, 0x0, 0x0, 0xc42000e300, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149600, 0xc420040048, 0xc420149600, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149500, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149500, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e500, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e500, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144640, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144640, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 473 [select]:
+net/http.(*persistConn).writeLoop(0xc420332120)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 457 [runnable]:
+net/http.(*persistConn).readLoop(0xc4203ef7a0)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 494 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9bc90, 0x72, 0xc4207b89a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4207be418, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4207be418, 0xc420751000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4207be400, 0xc420751000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4207be400, 0xc420751000, 0x1000, 0x1000, 0xc4201f3ca8, 0xc420207500, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a788, 0xc420751000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203abb00, 0xc420751000, 0x1000, 0x1000, 0x42, 0xc4207b8b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ad980)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ad980, 0x1, 0xc420801860, 0xc4203ba480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203abb00)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 492 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ab7a0)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 449 [select]:
+github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec.func2(0xc4201fec60, 0xc420754b40, 0x14810c0, 0xc4201fe960, 0xc42020e580, 0x9, 0x146b7e0, 0xc4204d6900)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:77 +0x11b
+created by github.com/replicatedcom/support-bundle/pkg/collect/bundle.exec
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/bundle/exec.go:76 +0x204
+
+goroutine 455 [select]:
+io.(*pipe).Write(0xc420232d70, 0xc4208d2808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc420188558, 0xc4208d2008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc420188558, 0x1468760, 0xc420188578, 0x1466b20, 0xc4206602a0, 0x17, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc420188558, 0xc420188578, 0xc42023e500)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 520 [runnable]:
+net/http.(*persistConn).readLoop(0xc42025e5a0)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 360 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc4205220c0, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc4205220c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 521 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4200517c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc4207da700, 0x1466b40, 0xc420626780, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc42025e5a0)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 373 [select]:
+net/http.(*Transport).getConn(0xc4204343c0, 0xc42049b380, 0x0, 0x134723c, 0x4, 0xc4200b0a80, 0x17, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:962 +0x558
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207daf00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:409 +0x632
+net/http.send(0xc4207daf00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0x1, 0x0, 0xc4201886e8, 0xc4207daf00)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207daf00, 0x0, 0x0, 0x0, 0xc4201886e8, 0x0, 0x1, 0x41fd08)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207daf00, 0xc420040048, 0xc4207daf00, 0x42851e)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207dae00, 0x1360c1c, 0xc42054aaa8, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207dae00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d4a0, 0x4c, 0xc42054adb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d4a0, 0x4c, 0xc42054adb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a7c0, 0x40, 0xc420010001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a7c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 371 [runnable]:
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704000, 0x4c, 0xc420282db8, 0x0, 0x2, 0x2, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:68 +0x1ab
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a680, 0x40, 0x10001, 0x0, 0xc4203b66e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a680, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 382 [select]:
+io.(*pipe).Write(0xc420232690, 0xc420708a08, 0x1e00, 0x7601, 0xa00, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc4201883b0, 0xc420708008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc4201883b0, 0x1468760, 0xc4201883c0, 0x1466b20, 0xc42002e3c0, 0xc4200d3450, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc4201883b0, 0xc4201883c0, 0xc42074a940)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 485 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9b910, 0x72, 0xc4204c19a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4204f1318, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4204f1318, 0xc4206ed000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4204f1300, 0xc4206ed000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4204f1300, 0xc4206ed000, 0x1000, 0x1000, 0xc4204c1ab8, 0x41fc96, 0xc420801560)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a680, 0xc4206ed000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ab200, 0xc4206ed000, 0x1000, 0x1000, 0x3a, 0xc4204c1b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4201ff860)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4201ff860, 0x1, 0xc420801560, 0xc4203d3480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ab200)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 522 [runnable]:
+net/http.(*Transport).dialConn(0xc4204343c0, 0x1481080, 0xc420040048, 0x0, 0x134723c, 0x4, 0xc420317940, 0x17, 0x0, 0x0, ...)
+	/usr/local/go/src/net/http/transport.go:1096 +0x55
+net/http.(*Transport).getConn.func4(0xc4204343c0, 0x1481080, 0xc420040048, 0xc420334ff0, 0xc420801b60)
+	/usr/local/go/src/net/http/transport.go:957 +0x78
+created by net/http.(*Transport).getConn
+	/usr/local/go/src/net/http/transport.go:956 +0x363
+
+goroutine 418 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144040, 0x40, 0x10001, 0x0, 0xc4200d06e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144040, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 462 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207f67c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc4207dad00, 0x1466b40, 0xc420544040, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4203ef9e0)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 278 [select]:
+net/http.(*persistConn).roundTrip(0xc42025e240, 0xc420334000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060ff00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060ff00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a7d0, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060ff00, 0x0, 0x0, 0x0, 0xc42020a7d0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060ff00, 0xc420040048, 0xc42060ff00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060fe00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060fe00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704550, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704550, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522040, 0x40, 0xc420010001, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522040, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 297 [select]:
+net/http.(*persistConn).roundTrip(0xc420332120, 0xc42052b440, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149200, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149200, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e2b0, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149200, 0x0, 0x0, 0x0, 0xc42000e2b0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149200, 0xc420040048, 0xc420149200, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149100, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149100, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e460, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e460, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a5c0, 0x40, 0xc420010001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a5c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 296 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a3320, 0xc42052bd70, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149e00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149e00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e428, 0x75, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149e00, 0x0, 0x0, 0x0, 0xc42000e428, 0x0, 0x1, 0x41fc96)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149e00, 0xc420040048, 0xc420149e00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149d00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149d00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e640, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e640, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a580, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a580, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 295 [select]:
+net/http.(*persistConn).roundTrip(0xc4203eec60, 0xc42052b320, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149000, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149000, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e290, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149000, 0x0, 0x0, 0x0, 0xc42000e290, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149000, 0xc420040048, 0xc420149000, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420148f00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420148f00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e370, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e370, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a540, 0x40, 0x10001, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a540, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 294 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ab200, 0xc420023cb0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060f500, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060f500, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a670, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060f500, 0x0, 0x0, 0x0, 0xc42020a670, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060f500, 0xc420040048, 0xc42060f500, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f400, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f400, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704410, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704410, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a500, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a500, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 486 [select]:
+net/http.(*persistConn).writeLoop(0xc4203ab200)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 488 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9bbc0, 0x72, 0xc4202809a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4204f1798, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4204f1798, 0xc42065d000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4204f1780, 0xc42065d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4204f1780, 0xc42065d000, 0x1000, 0x1000, 0xc420280ab8, 0x41fc96, 0xc4208016e0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a6d0, 0xc42065d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ab440, 0xc42065d000, 0x1000, 0x1000, 0x3e, 0xc420280b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4203ac7e0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4203ac7e0, 0x1, 0xc4208016e0, 0xc4200d1c80, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ab440)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 419 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9ba20, 0x72, 0xc4205dc9a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc42023d218, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc42023d218, 0xc4204c8000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc42023d200, 0xc4204c8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc42023d200, 0xc4204c8000, 0x1000, 0x1000, 0xc420298f28, 0xc420230e00, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc420236288, 0xc4204c8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203ef8c0, 0xc4204c8000, 0x1000, 0x1000, 0x1b, 0xc4205dcb98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc42052cf60)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc42052cf60, 0x1, 0xc4200a09c0, 0xc4207f8480, 0x300000002, 0xc420298f00, 0xc4207f8408)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203ef8c0)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 478 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9c8c0, 0x72, 0xc4205d99a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527a98, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527a98, 0xc42074e000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527a80, 0xc42074e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527a80, 0xc42074e000, 0x1000, 0x1000, 0xc4205d9ab8, 0x41fc96, 0xc4208c4f00)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e308, 0xc42074e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc420333c20, 0xc42074e000, 0x1000, 0x1000, 0xf3, 0xc4205d9b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4206396e0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4206396e0, 0x1, 0xc4208c4f00, 0xc4203b7c80, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc420333c20)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 476 [select]:
+net/http.(*persistConn).writeLoop(0xc4203330e0)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 475 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2610, 0x72, 0xc4202c69a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527698, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527698, 0xc42074c000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527680, 0xc42074c000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527680, 0xc42074c000, 0x1000, 0x1000, 0xc4202c6ab8, 0x41fc96, 0xc4208c4e40)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e2e0, 0xc42074c000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4203330e0, 0xc42074c000, 0x1000, 0x1000, 0x27, 0xc4202c6b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc420639380)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc420639380, 0x1, 0xc4208c4e40, 0xc420052480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4203330e0)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 461 [runnable]:
+net/http.(*persistConn).readLoop(0xc4203ef9e0)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 463 [runnable]:
+net/http.(*Transport).dialConn(0xc4204343c0, 0x1481080, 0xc420040048, 0x0, 0x134723c, 0x4, 0xc4200b0a80, 0x17, 0x0, 0x0, ...)
+	/usr/local/go/src/net/http/transport.go:1096 +0x55
+net/http.(*Transport).getConn.func4(0xc4204343c0, 0x1481080, 0xc420040048, 0xc42049b410, 0xc420776240)
+	/usr/local/go/src/net/http/transport.go:957 +0x78
+created by net/http.(*Transport).getConn
+	/usr/local/go/src/net/http/transport.go:956 +0x363
+
+goroutine 277 [select]:
+net/http.(*persistConn).roundTrip(0xc42025e360, 0xc420334450, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42077e200, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42077e200, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a838, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42077e200, 0x0, 0x0, 0x0, 0xc42020a838, 0x0, 0x1, 0x22)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42077e200, 0xc420040048, 0xc42077e200, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42077e100, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42077e100, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207045a0, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207045a0, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522000, 0x40, 0xc420010001, 0xc420188001, 0x8b42e9)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522000, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 442 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ef8c0, 0xc4202016e0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207dab00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207dab00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc4201886a0, 0x0, 0xc4205dc850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207dab00, 0x0, 0x0, 0x0, 0xc4201886a0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207dab00, 0xc420040048, 0xc4207dab00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207daa00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207daa00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d400, 0x4c, 0xc4205dcdb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d400, 0x4c, 0xc4205dcdb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522180, 0x40, 0x10001, 0x0, 0x458841)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522180, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 472 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2d60, 0x72, 0xc4207209a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527298, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527298, 0xc420734000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527280, 0xc420734000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527280, 0xc420734000, 0x1000, 0x1000, 0xc420720ab8, 0x41fc96, 0xc4208c4d80)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e2b8, 0xc420734000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc420332120, 0xc420734000, 0x1000, 0x1000, 0x25, 0xc420720b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4206390e0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4206390e0, 0x1, 0xc4208c4d80, 0xc4200cb480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc420332120)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 498 [select]:
+net/http.(*persistConn).writeLoop(0xc4202a2900)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 303 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a640, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a640, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 332 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a2a20, 0xc42052ba40, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149a00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149a00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e3c8, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149a00, 0x0, 0x0, 0x0, 0xc42000e3c8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149a00, 0xc420040048, 0xc420149a00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149900, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149900, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e5a0, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e5a0, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144600, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144600, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 507 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207e17c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc420149e00, 0x1466b40, 0xc4203b5580, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4202a3320)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 506 [runnable]:
+net/http.(*persistConn).readLoop(0xc4202a3320)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 445 [select]:
+io.(*pipe).Write(0xc420209040, 0xc4208c8608, 0x2200, 0x7a01, 0x600, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc42020a3a0, 0xc4208c8008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc42020a3a0, 0x1468760, 0xc42020a440, 0x1466b20, 0xc420183080, 0xc420234b50, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc42020a3a0, 0xc42020a440, 0xc4201c98e0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 384 [select]:
+io.(*pipe).Write(0xc420232a00, 0xc420712808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc4201883d0, 0xc420712008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc4201883d0, 0x1468760, 0xc4201883e8, 0x1466b20, 0xc42052cba0, 0x0, 0x0, 0xc4203d16e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc4201883d0, 0xc4201883e8, 0xc42074ac80)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 503 [runnable]:
+net/http.(*persistConn).readLoop(0xc4202a2b40)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 452 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ef7a0, 0xc420200b70, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207da900, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207da900, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc420188678, 0x0, 0xc4205dc850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207da900, 0x0, 0x0, 0x0, 0xc420188678, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207da900, 0xc420040048, 0xc4207da900, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207da800, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207da800, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d3b0, 0x4c, 0xc4205dcdb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d3b0, 0x4c, 0xc4205dcdb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a8c0, 0x40, 0x10001, 0x0, 0xc4207e36e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a8c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 479 [select]:
+net/http.(*persistConn).writeLoop(0xc420333c20)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 307 [select]:
+net/http.(*persistConn).roundTrip(0xc42015c360, 0xc420023aa0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060f300, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060f300, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a610, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060f300, 0x0, 0x0, 0x0, 0xc42020a610, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060f300, 0xc420040048, 0xc42060f300, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f100, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f100, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207043c0, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207043c0, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42057a1c0, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42057a1c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 298 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a600, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a600, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 293 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ab440, 0xc420023ec0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060f800, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060f800, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a6c0, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060f800, 0x0, 0x0, 0x0, 0xc42020a6c0, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060f800, 0xc420040048, 0xc42060f800, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f700, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f700, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc420704460, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc420704460, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a3c0, 0x40, 0xc420010001, 0xc42000e201, 0x8b42e9)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a3c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 175 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ab7a0, 0xc4202404b0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42060fb00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc42060fb00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42020a728, 0x0, 0xc4202c5850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42060fb00, 0x0, 0x0, 0x0, 0xc42020a728, 0x0, 0x1, 0x8)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42060fb00, 0xc420040048, 0xc42060fb00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42060f900, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42060f900, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207044b0, 0x4c, 0xc4202c5db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207044b0, 0x4c, 0xc4202c5db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a380, 0x40, 0x10001, 0xc420236238, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a380, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 516 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9c310, 0x72, 0xc4202819a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4207bef18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4207bef18, 0xc420593000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc4207bef00, 0xc420593000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc4207bef00, 0xc420593000, 0x1000, 0x1000, 0xc4206b44a8, 0xc420544840, 0x1)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42020a848, 0xc420593000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc42025e360, 0xc420593000, 0x1000, 0x1000, 0x43, 0xc420281b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4205940c0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4205940c0, 0x1, 0xc4208018c0, 0xc420053480, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc42025e360)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 350 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc4201447c0, 0x40, 0xc420010001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc4201447c0, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 497 [runnable]:
+net/http.(*persistConn).readLoop(0xc42025e240)
+	/usr/local/go/src/net/http/transport.go:1590 +0xd2
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 481 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89edd2540, 0x72, 0xc4207239a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420527f18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420527f18, 0xc420590000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420527f00, 0xc420590000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420527f00, 0xc420590000, 0x1000, 0x1000, 0xc420723ab8, 0x41fc96, 0xc4208c4fc0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e340, 0xc420590000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4202a2900, 0xc420590000, 0x1000, 0x1000, 0xf3, 0xc420723b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc420639ce0)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc420639ce0, 0x1, 0xc4208c4fc0, 0xc420052c80, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4202a2900)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 380 [select]:
+net/http.(*Transport).getConn(0xc4204343c0, 0xc420334fc0, 0x0, 0x134723c, 0x4, 0xc420317940, 0x17, 0x0, 0x0, 0x60000c420093400)
+	/usr/local/go/src/net/http/transport.go:962 +0x558
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc42077e600, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:409 +0x632
+net/http.send(0xc42077e600, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0x1, 0x0, 0xc42020a910, 0xc42077e600)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc42077e600, 0x0, 0x0, 0x0, 0xc42020a910, 0x0, 0x1, 0x41fd08)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc42077e600, 0xc420040048, 0xc42077e600, 0x42851e)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc42077e400, 0x1360c1c, 0xc420645aa8, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc42077e400, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc4207045f0, 0x4c, 0xc420645db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207045f0, 0x4c, 0xc420645db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42030a880, 0x40, 0x10001, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42030a880, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 517 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207dcfc4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc42077e200, 0x1466b40, 0xc420626700, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc42025e360)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 458 [runnable]:
+net.SplitHostPort.func1(...)
+	/usr/local/go/src/net/ipsock.go:161
+net.SplitHostPort(0x1348eaa, 0x6, 0x13463bc, 0x2, 0xffffffffffffffff, 0xc420040048, 0x11d7e20, 0x1ca2d60)
+	/usr/local/go/src/net/ipsock.go:168 +0x6cf
+net/http.cleanHost(0x1348eaa, 0x6, 0x0, 0xc4207e37c4)
+	/usr/local/go/src/net/http/request.go:674 +0x83
+net/http.(*Request).write(0xc4207da900, 0x1466b40, 0xc420544000, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/request.go:511 +0xad
+net/http.(*persistConn).writeLoop(0xc4203ef7a0)
+	/usr/local/go/src/net/http/transport.go:1825 +0x1ea
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 259 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9adb0, 0x72, 0xc4205479a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420531c18, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420531c18, 0xc42059f000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420531c00, 0xc42059f000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420531c00, 0xc42059f000, 0x1000, 0x1000, 0x454a60, 0xc420297c80, 0x4)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e678, 0xc42059f000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc42015c360, 0xc42059f000, 0x1000, 0x1000, 0xc420547b98, 0x405195, 0xc42057fce0)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc420661860)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc420661860, 0x1, 0x0, 0x0, 0x0, 0xc4200a0720, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc42015c360)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 260 [select]:
+net/http.(*persistConn).writeLoop(0xc42015c360)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 400 [select]:
+net/http.(*persistConn).roundTrip(0xc4203ef9e0, 0xc420201f50, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc4207dad00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc4207dad00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0x1, 0x0, 0xc4201886c0, 0xc4207dad00)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc4207dad00, 0x0, 0x0, 0x0, 0xc4201886c0, 0x0, 0x1, 0x41fd08)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc4207dad00, 0xc420040048, 0xc4207dad00, 0x42851e)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc4207dac00, 0x1360c1c, 0xc42054aaa8, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc4207dac00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42025d450, 0x4c, 0xc42054adb8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42025d450, 0x4c, 0xc42054adb8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420522100, 0x40, 0x10001, 0x0, 0xc4203b96e8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420522100, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 308 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a2b40, 0xc42052bbc0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149c00, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149c00, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e3f8, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149c00, 0x0, 0x0, 0x0, 0xc42000e3f8, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149c00, 0xc420040048, 0xc420149c00, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149b00, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149b00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e5f0, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e5f0, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42057a200, 0x40, 0xc420010001, 0xc4201880c0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42057a200, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 313 [select]:
+net/http.(*persistConn).roundTrip(0xc4202a2900, 0xc42052b8c0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:2033 +0x5a7
+net/http.(*Transport).RoundTrip(0xc4204343c0, 0xc420149800, 0xc4204343c0, 0x0, 0x0)
+	/usr/local/go/src/net/http/transport.go:422 +0x8f2
+net/http.send(0xc420149800, 0x1468a40, 0xc4204343c0, 0x0, 0x0, 0x0, 0xc42000e338, 0x0, 0xc420720850, 0x1)
+	/usr/local/go/src/net/http/client.go:252 +0x185
+net/http.(*Client).send(0xc4204aae10, 0xc420149800, 0x0, 0x0, 0x0, 0xc42000e338, 0x0, 0x1, 0x0)
+	/usr/local/go/src/net/http/client.go:176 +0xfa
+net/http.(*Client).Do(0xc4204aae10, 0xc420149800, 0xc420040048, 0xc420149800, 0x0)
+	/usr/local/go/src/net/http/client.go:615 +0x28d
+github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp.Do(0x1481080, 0xc420040048, 0xc4204aae10, 0xc420149700, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go:30 +0x6e
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).doRequest(0xc420140e00, 0x1481080, 0xc420040048, 0xc420149700, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:135 +0xbe
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).sendRequest(0xc420140e00, 0x1481080, 0xc420040048, 0x1348814, 0x6, 0xc42065e550, 0x4c, 0xc420720db8, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:122 +0x153
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).delete(0xc420140e00, 0x1481080, 0xc420040048, 0xc42065e550, 0x4c, 0xc420720db8, 0x0, 0x0, 0x0, 0x0, ...)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/request.go:69 +0xe3
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc42057a240, 0x40, 0x10001, 0x1, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:24 +0x16b
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc42057a240, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 368 [runnable]:
+net/url.url.Values.Set(...)
+	/usr/local/go/src/net/url/url.go:813
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client.(*Client).ContainerRemove(0xc420140e00, 0x1481080, 0xc420040048, 0xc420144000, 0x40, 0x10001, 0x0, 0xc4200cfee8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/client/container_remove.go:14 +0x438
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func1(0x14810c0, 0xc420182a20, 0x14a47e0, 0xc420140e00, 0xc420144000, 0x40, 0x0, 0x0, 0x0)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:42 +0x9b
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:40 +0x47e
+
+goroutine 495 [runnable]:
+syscall.Syscall(0x1, 0x1a, 0xc42058e000, 0xa0, 0xa0, 0xa0, 0x0)
+	/usr/local/go/src/syscall/asm_linux_amd64.s:18 +0x5
+syscall.write(0x1a, 0xc42058e000, 0xa0, 0x1000, 0xc420230f00, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_linux_amd64.go:1022 +0x5f
+syscall.Write(0x1a, 0xc42058e000, 0xa0, 0x1000, 0x2, 0x1, 0x7fa89edd8840)
+	/usr/local/go/src/syscall/syscall_unix.go:181 +0x49
+internal/poll.(*FD).Write(0xc4207be400, 0xc42058e000, 0xa0, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:256 +0x142
+net.(*netFD).Write(0xc4207be400, 0xc42058e000, 0xa0, 0x1000, 0x6, 0x5e, 0x42851e)
+	/usr/local/go/src/net/fd_unix.go:220 +0x4f
+net.(*conn).Write(0xc42020a788, 0xc42058e000, 0xa0, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:188 +0x6a
+net/http.persistConnWriter.Write(0xc4203abb00, 0xc42058e000, 0xa0, 0x1000, 0x5e, 0x1348814, 0x6)
+	/usr/local/go/src/net/http/transport.go:1253 +0x52
+bufio.(*Writer).Flush(0xc4206265c0, 0x1466b40, 0xc4206265c0)
+	/usr/local/go/src/bufio/bufio.go:573 +0x7e
+net/http.(*persistConn).writeLoop(0xc4203abb00)
+	/usr/local/go/src/net/http/transport.go:1838 +0x38d
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 451 [select]:
+io.(*pipe).Write(0xc420232c30, 0xc42078e808, 0x2000, 0x7801, 0x800, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:87 +0x1e3
+io.(*PipeWriter).Write(0xc420188430, 0xc42078e008, 0x2800, 0x8001, 0x2808, 0x0, 0x0)
+	/usr/local/go/src/io/pipe.go:153 +0x4c
+github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy.StdCopy(0x1468760, 0xc420188430, 0x1468760, 0xc420188458, 0x1466b20, 0xc4200887e0, 0x0, 0x0, 0xc4203d3ee8)
+	/go/src/github.com/replicatedcom/support-bundle/vendor/github.com/docker/docker/pkg/stdcopy/stdcopy.go:174 +0x3f1
+github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun.func3(0xc420188430, 0xc420188458, 0xc420122540)
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:84 +0x70
+created by github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util.ContainerRun
+	/go/src/github.com/replicatedcom/support-bundle/pkg/collect/plugins/docker/util/container_run.go:82 +0x942
+
+goroutine 500 [IO wait]:
+internal/poll.runtime_pollWait(0x7fa89ed9ace0, 0x72, 0xc4207269a8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420140398, 0x72, 0xffffffffffffff00, 0x146a220, 0x1c23680)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420140398, 0xc42081e000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420140380, 0xc42081e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420140380, 0xc42081e000, 0x1000, 0x1000, 0xc420726aa0, 0xf, 0x7fa89eddef80)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42000e3d0, 0xc42081e000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+net/http.(*persistConn).Read(0xc4202a2a20, 0xc42081e000, 0x1000, 0x1000, 0x404fa6, 0xc420726b98, 0x42b099)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc4208ae480)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc4208ae480, 0x1, 0xc4208000c0, 0xc4207fb480, 0xc4207fb418, 0xc420829080, 0xc4207fb408)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc4202a2a20)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+default/support-bundle/logs
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/cpuinfo in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/meminfo in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/mounts in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/uptime in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/version in container
+DEBUG 2019/05/09 22:00:49 os.read-file reading /proc/vmstat in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 os.read-file in container
+DEBUG 2019/05/09 22:00:49 journald.logs in container
+DEBUG 2019/05/09 22:00:49 journald.logs in container
+DEBUG 2019/05/09 22:00:49 spec for docker.container-logs aliased from docker.logs
+DEBUG 2019/05/09 22:00:49 spec for docker.container-logs aliased from docker.logs
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c280 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c300 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c380 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 Producer not defined for spec {SpecShared:{Description: OutputDir: TimeoutSeconds:0 Scrub:<nil> IncludeEmpty:false Meta:<nil> Defer:false} SupportBundleVersion:<nil> SupportBundleGoroutines:<nil> SupportBundleLogs:<nil> CustomerMeta:<nil> ChannelMeta:<nil> GlobalRedaction:<nil> CoreHostname:<nil> CoreHTTPRequest:<nil> CoreLoadavg:<nil> CoreReadFile:<nil> CoreRunCommand:<nil> CoreUptime:<nil> JournaldLogs:<nil> DockerContainerCp:<nil> DockerContainerExec:<nil> DockerContainerInspect:<nil> DockerContainerLogs:<nil> DockerContainerLs:<nil> DockerContainerRun:<nil> DockerExec:<nil> DockerImageLs:<nil> DockerImages:<nil> DockerInfo:<nil> DockerLogs:<nil> DockerNodeLs:<nil> DockerPs:<nil> DockerRun:<nil> DockerServiceLogs:<nil> DockerServiceLs:<nil> DockerServicePs:<nil> DockerStackServiceLogs:<nil> DockerStackServiceLs:<nil> DockerStackServicePs:<nil> DockerStackTaskLogs:<nil> DockerTaskLogs:<nil> DockerTaskLs:<nil> DockerVersion:<nil> KubernetesAPIVersions:<nil> KubernetesClusterInfo:<nil> KubernetesContainerCp:<nil> KubernetesLogs:<nil> KubernetesResourceList:0xc42023c400 KubernetesVersion:<nil> RetracedEvents:<nil>}
+DEBUG 2019/05/09 22:00:49 spec for docker.container-logs aliased from docker.logs
+DEBUG 2019/05/09 22:00:50 Running tasks...
+DEBUG 2019/05/09 22:00:50 Making request to http://localhost:2379/metrics with method get
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"description":"iptables sysconfig settings","output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/iptables"}} completed in 7.818366ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.image-ls":{"output_dir":"default/docker","All":false,"Filters":null}} completed in 516.431µs
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/system-release"}} completed in 9.931848ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/mounts"}} completed in 9.89285ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/uptime"}} completed in 19.097455ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ip_addr_show","name":"ip","args":["-o","addr","show"]}} completed in 20.820585ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/version"}} completed in 20.331972ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/cpuinfo"}} completed in 20.523247ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"description":"Support bundle version information","output_dir":"/","version":{}} completed in 21.378518ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.uptime":{"output_dir":"default/commands/uptime","template":""}} completed in 21.004584ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.version":{"output_dir":"default/docker"}} completed in 208.679µs
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/vmstat"}} completed in 24.841859ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.container-ls":{"output_dir":"default/docker","Quiet":false,"Size":false,"All":true,"Latest":false,"Since":"","Before":"","Limit":0,"Filters":null}} completed in 19.700029ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/df_inodes","name":"df","args":["-ali"]}} completed in 34.874136ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ip_link_show","name":"ip","args":["-o","link","show"]}} completed in 34.885867ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/date","name":"date"}} completed in 35.083639ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.loadavg":{"output_dir":"default/commands/loadavg","template":""}} completed in 34.796108ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.read-file":{"output_dir":"default/proc","filepath":"/proc/meminfo"}} completed in 34.67856ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ip_route_show","name":"ip","args":["-o","route","show"]}} completed in 35.180607ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.http-request":{"output_dir":"default/kubernetes/metrics/etcd","url":"http://localhost:2379/metrics","method":"get"}} completed in 57.45419ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/df","name":"df","args":["-al"]}} completed in 58.502163ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/dmesg","name":"dmesg"}} completed in 58.448497ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.hostname":{"output_dir":"default/commands/hostname"}} completed in 58.729015ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/ps","name":"ps","args":["fauxwww"]}} completed in 100.368694ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"docker.info":{"output_dir":"default/docker"}} completed in 26.185747ms
+DEBUG 2019/05/09 22:00:50 Task with spec {"os.run-command":{"output_dir":"default/commands/free","name":"free","args":["-m"]}} completed in 102.411517ms
+DEBUG 2019/05/09 22:00:52 Task with spec {"os.read-file":{"description":"iptables sysconfig settings","output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/ip6tables"}} completed in 2.348550423s
+DEBUG 2019/05/09 22:00:52 Task with spec {"os.read-file":{"description":"iptables sysconfig settings","output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/iptables-config"}} completed in 2.97127704s
+DEBUG 2019/05/09 22:00:53 Task with spec {"os.read-file":{"description":"dnsmasq.conf","output_dir":"default/etc","filepath":"/etc/dnsmasq.conf"}} completed in 3.606207428s
+DEBUG 2019/05/09 22:00:53 Task with spec {"os.read-file":{"description":"docker daemon json","output_dir":"default/etc/docker","filepath":"/etc/docker/daemon.json"}} completed in 3.924204238s
+DEBUG 2019/05/09 22:00:54 Task with spec {"os.read-file":{"description":"DNS resolv.conf","output_dir":"default/etc","filepath":"/etc/resolv.conf"}} completed in 4.391588556s
+DEBUG 2019/05/09 22:00:54 Task with spec {"os.read-file":{"description":"firewalld settings","output_dir":"default/etc","filepath":"/etc/firewalld"}} completed in 4.9916504s
+DEBUG 2019/05/09 22:00:55 Task with spec {"os.read-file":{"description":"dhcp3 dhclient.conf","output_dir":"default/etc/dhcp3","filepath":"/etc/dhcp3/dhclient.conf"}} completed in 5.188075356s
+DEBUG 2019/05/09 22:00:55 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/centos-release"}} completed in 5.21201319s
+DEBUG 2019/05/09 22:00:56 Task with spec {"os.read-file":{"output_dir":"default/etc/sysconfig","filepath":"/etc/sysconfig/docker"}} completed in 6.568213118s
+DEBUG 2019/05/09 22:00:57 Task with spec {"os.read-file":{"description":"firewalld settings","output_dir":"default/usr/lib","filepath":"/usr/lib/FirewallD"}} completed in 7.186731774s
+DEBUG 2019/05/09 22:00:58 Task with spec {"os.read-file":{"output_dir":"default/etc/systemd/system/docker.service.d","filepath":"/etc/systemd/system/docker.service.d/http-proxy.conf"}} completed in 8.566598659s
+DEBUG 2019/05/09 22:00:58 Task with spec {"os.read-file":{"output_dir":"default/var/log/upstart","filepath":"/var/log/upstart/docker.log"}} completed in 8.72678317s
+DEBUG 2019/05/09 22:00:58 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/timezone"}} completed in 8.938387556s
+DEBUG 2019/05/09 22:00:59 Task with spec {"journald.logs":{"output_dir":"default/journald/docker","unit":"docker","since":"-14 days"}} completed in 9.454389676s
+DEBUG 2019/05/09 22:00:59 Task with spec {"os.read-file":{"output_dir":"default/etc/default","filepath":"/etc/default/docker"}} completed in 9.457851902s
+DEBUG 2019/05/09 22:00:59 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/fstab"}} completed in 9.566291982s
+DEBUG 2019/05/09 22:01:00 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/hostname"}} completed in 10.393727011s
+DEBUG 2019/05/09 22:01:00 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/os-release"}} completed in 10.850190651s
+DEBUG 2019/05/09 22:01:01 Task with spec {"journald.logs":{"output_dir":"default/kubernetes/kubelet/logs","unit":"kubelet","reverse":true}} completed in 11.246990783s
+DEBUG 2019/05/09 22:01:01 Task with spec {"os.read-file":{"output_dir":"default/etc","filepath":"/etc/hosts"}} completed in 11.653106094s
+DEBUG 2019/05/09 22:01:01 Running tasks complete
+DEBUG 2019/05/09 22:01:01 Running deferred tasks...
+
+error.json
+[
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the replicated stack",
+        "output_dir": "default/replicated/swarm/replicated/service-logs",
+        "namespace": "replicated"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the retraced stack",
+        "output_dir": "default/replicated/swarm/replicated-retraced/logs",
+        "namespace": "replicated-retraced"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the premkit stack",
+        "output_dir": "default/replicated/swarm/replicated-premkit/logs",
+        "namespace": "replicated-premkit"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "docker.stack-service-logs": {
+        "description": "Logs from services in the statsd stack",
+        "output_dir": "default/replicated/swarm/replicated-statsd/logs",
+        "namespace": "replicated-statsd"
+      }
+    },
+    "error": "failed to list services: Error response from daemon: This node is not a swarm manager. Use \"docker swarm init\" or \"docker swarm join\" to connect this node to swarm and try again."
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "iptables sysconfig settings",
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/iptables"
+      }
+    },
+    "error": "this container: not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/system-release"
+      }
+    },
+    "error": "this container: not found"
+  },
+  {
+    "path": "default/kubernetes/metrics/etcd",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.http-request": {
+        "output_dir": "default/kubernetes/metrics/etcd",
+        "url": "http://localhost:2379/metrics",
+        "method": "get"
+      }
+    },
+    "error": "make request: Get http://localhost:2379/metrics: dial tcp 127.0.0.1:2379: connect: connection refused"
+  },
+  {
+    "path": "default/commands/dmesg/stderr",
+    "format": "",
+    "size": 58,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/dmesg",
+        "name": "dmesg"
+      }
+    },
+    "error": "exit status 1"
+  },
+  {
+    "path": "default/commands/dmesg/stdout",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/dmesg",
+        "name": "dmesg"
+      }
+    },
+    "error": "exit status 1"
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "iptables sysconfig settings",
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/ip6tables"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "iptables sysconfig settings",
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/iptables-config"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "dnsmasq.conf",
+        "output_dir": "default/etc",
+        "filepath": "/etc/dnsmasq.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/docker",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "docker daemon json",
+        "output_dir": "default/etc/docker",
+        "filepath": "/etc/docker/daemon.json"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "DNS resolv.conf",
+        "output_dir": "default/etc",
+        "filepath": "/etc/resolv.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "firewalld settings",
+        "output_dir": "default/etc",
+        "filepath": "/etc/firewalld"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/dhcp3",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "dhcp3 dhclient.conf",
+        "output_dir": "default/etc/dhcp3",
+        "filepath": "/etc/dhcp3/dhclient.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/centos-release"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/sysconfig",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc/sysconfig",
+        "filepath": "/etc/sysconfig/docker"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/usr/lib",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "description": "firewalld settings",
+        "output_dir": "default/usr/lib",
+        "filepath": "/usr/lib/FirewallD"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/etc/systemd/system/docker.service.d",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc/systemd/system/docker.service.d",
+        "filepath": "/etc/systemd/system/docker.service.d/http-proxy.conf"
+      }
+    },
+    "error": "docker read file: file not found"
+  },
+  {
+    "path": "default/var/log/upstart",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/var/log/upstart",
+        "filepath": "/var/log/upstart/docker.log"
+      }
+    },
+    "error": "docker read file: file not found"
+  }
+]
+index.json
+[
+  {
+    "path": "default/docker/image_ls.json",
+    "format": "",
+    "size": 509,
+    "spec": {
+      "docker.image-ls": {
+        "output_dir": "default/docker",
+        "All": false,
+        "Filters": null
+      }
+    }
+  },
+  {
+    "path": "default/proc/mounts",
+    "format": "",
+    "size": 2953,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/mounts"
+      }
+    }
+  },
+  {
+    "path": "default/proc/uptime",
+    "format": "",
+    "size": 15,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/uptime"
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_addr_show/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_addr_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "addr",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_addr_show/stdout",
+    "format": "",
+    "size": 498,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_addr_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "addr",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/proc/version",
+    "format": "",
+    "size": 144,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/version"
+      }
+    }
+  },
+  {
+    "path": "default/proc/cpuinfo",
+    "format": "",
+    "size": 3832,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/cpuinfo"
+      }
+    }
+  },
+  {
+    "path": "/VERSION.json",
+    "format": "",
+    "size": 88,
+    "spec": {
+      "description": "Support bundle version information",
+      "output_dir": "/",
+      "version": {}
+    }
+  },
+  {
+    "path": "default/commands/uptime/uptime",
+    "format": "",
+    "size": 15,
+    "spec": {
+      "os.uptime": {
+        "output_dir": "default/commands/uptime",
+        "template": ""
+      }
+    }
+  },
+  {
+    "path": "default/docker/docker_version.json",
+    "format": "",
+    "size": 259,
+    "spec": {
+      "docker.version": {
+        "output_dir": "default/docker"
+      }
+    }
+  },
+  {
+    "path": "default/proc/vmstat",
+    "format": "",
+    "size": 2630,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/vmstat"
+      }
+    }
+  },
+  {
+    "path": "default/docker/container_ls.json",
+    "format": "",
+    "size": 1405,
+    "spec": {
+      "docker.container-ls": {
+        "output_dir": "default/docker",
+        "Quiet": false,
+        "Size": false,
+        "All": true,
+        "Latest": false,
+        "Since": "",
+        "Before": "",
+        "Limit": 0,
+        "Filters": null
+      }
+    }
+  },
+  {
+    "path": "default/commands/df_inodes/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df_inodes",
+        "name": "df",
+        "args": [
+          "-ali"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/df_inodes/stdout",
+    "format": "",
+    "size": 2341,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df_inodes",
+        "name": "df",
+        "args": [
+          "-ali"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_link_show/stdout",
+    "format": "",
+    "size": 490,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_link_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "link",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_link_show/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_link_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "link",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/date/stdout",
+    "format": "",
+    "size": 29,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/date",
+        "name": "date"
+      }
+    }
+  },
+  {
+    "path": "default/commands/date/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/date",
+        "name": "date"
+      }
+    }
+  },
+  {
+    "path": "default/commands/loadavg/loadavg",
+    "format": "",
+    "size": 26,
+    "spec": {
+      "os.loadavg": {
+        "output_dir": "default/commands/loadavg",
+        "template": ""
+      }
+    }
+  },
+  {
+    "path": "default/proc/meminfo",
+    "format": "",
+    "size": 1335,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/proc",
+        "filepath": "/proc/meminfo"
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_route_show/stdout",
+    "format": "",
+    "size": 184,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_route_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "route",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ip_route_show/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ip_route_show",
+        "name": "ip",
+        "args": [
+          "-o",
+          "route",
+          "show"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/df/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df",
+        "name": "df",
+        "args": [
+          "-al"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/df/stdout",
+    "format": "",
+    "size": 2458,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/df",
+        "name": "df",
+        "args": [
+          "-al"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/hostname/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.hostname": {
+        "output_dir": "default/commands/hostname"
+      }
+    }
+  },
+  {
+    "path": "default/commands/hostname/stdout",
+    "format": "",
+    "size": 8,
+    "spec": {
+      "os.hostname": {
+        "output_dir": "default/commands/hostname"
+      }
+    }
+  },
+  {
+    "path": "default/commands/ps/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ps",
+        "name": "ps",
+        "args": [
+          "fauxwww"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/ps/stdout",
+    "format": "",
+    "size": 13568,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/ps",
+        "name": "ps",
+        "args": [
+          "fauxwww"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/docker/docker_info.json",
+    "format": "",
+    "size": 2862,
+    "spec": {
+      "docker.info": {
+        "output_dir": "default/docker"
+      }
+    }
+  },
+  {
+    "path": "default/commands/free/stderr",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/free",
+        "name": "free",
+        "args": [
+          "-m"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/commands/free/stdout",
+    "format": "",
+    "size": 204,
+    "spec": {
+      "os.run-command": {
+        "output_dir": "default/commands/free",
+        "name": "free",
+        "args": [
+          "-m"
+        ]
+      }
+    }
+  },
+  {
+    "path": "default/etc/timezone",
+    "format": "",
+    "size": 8,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/timezone"
+      }
+    }
+  },
+  {
+    "path": "default/journald/docker/logs.raw",
+    "format": "",
+    "size": 11319,
+    "spec": {
+      "journald.logs": {
+        "output_dir": "default/journald/docker",
+        "unit": "docker",
+        "since": "-14 days"
+      }
+    }
+  },
+  {
+    "path": "default/etc/default/docker",
+    "format": "",
+    "size": 654,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc/default",
+        "filepath": "/etc/default/docker"
+      }
+    }
+  },
+  {
+    "path": "default/etc/fstab",
+    "format": "",
+    "size": 82,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/fstab"
+      }
+    }
+  },
+  {
+    "path": "default/etc/hostname",
+    "format": "",
+    "size": 8,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/hostname"
+      }
+    }
+  },
+  {
+    "path": "default/etc/os-release",
+    "format": "",
+    "size": 0,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/os-release"
+      }
+    }
+  },
+  {
+    "path": "default/kubernetes/kubelet/logs/logs.raw",
+    "format": "",
+    "size": 17,
+    "spec": {
+      "journald.logs": {
+        "output_dir": "default/kubernetes/kubelet/logs",
+        "unit": "kubelet",
+        "reverse": true
+      }
+    }
+  },
+  {
+    "path": "default/etc/hosts",
+    "format": "",
+    "size": 271,
+    "spec": {
+      "os.read-file": {
+        "output_dir": "default/etc",
+        "filepath": "/etc/hosts"
+      }
+    }
+  },
+  {
+    "path": "default/support-bundle/logs",
+    "format": "",
+    "size": 13984,
+    "spec": {
+      "description": "Support bundle logs",
+      "output_dir": "default/support-bundle",
+      "defer": true,
+      "logs": {}
+    }
+  },
+  {
+    "path": "default/support-bundle/goroutines",
+    "format": "",
+    "size": 103839,
+    "spec": {
+      "description": "Support bundle goroutine dump",
+      "output_dir": "default/support-bundle",
+      "defer": true,
+      "goroutines": {}
+    }
+  }
+]
+woot worked
+woot worked

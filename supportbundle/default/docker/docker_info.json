@@ -1,0 +1,134 @@
+{
+  "Architecture": "x86_64",
+  "BridgeNfIp6tables": true,
+  "BridgeNfIptables": true,
+  "CPUSet": true,
+  "CPUShares": true,
+  "CgroupDriver": "cgroupfs",
+  "ClusterAdvertise": "",
+  "ClusterStore": "",
+  "ContainerdCommit": {
+    "Expected": "894b81a4b802e4eb2a91d1ce216b8817763c29fb",
+    "ID": "894b81a4b802e4eb2a91d1ce216b8817763c29fb"
+  },
+  "Containers": 70,
+  "ContainersPaused": 0,
+  "ContainersRunning": 3,
+  "ContainersStopped": 67,
+  "CpuCfsPeriod": true,
+  "CpuCfsQuota": true,
+  "Debug": true,
+  "DefaultRuntime": "runc",
+  "DockerRootDir": "/var/lib/docker",
+  "Driver": "overlay2",
+  "DriverStatus": [
+    [
+      "Backing Filesystem",
+      "extfs"
+    ],
+    [
+      "Supports d_type",
+      "true"
+    ],
+    [
+      "Native Overlay Diff",
+      "true"
+    ]
+  ],
+  "ExperimentalBuild": true,
+  "GenericResources": null,
+  "HttpProxy": "gateway.docker.internal:3128",
+  "HttpsProxy": "gateway.docker.internal:3129",
+  "ID": "6GKL:R3N5:XLPW:ZZWY:E76J:WNNM:DVQY:7GTF:YJ2M:UBAE:GAXO:4DSZ",
+  "IPv4Forwarding": true,
+  "Images": 42,
+  "IndexServerAddress": "https://index.docker.io/v1/",
+  "InitBinary": "docker-init",
+  "InitCommit": {
+    "Expected": "fec3683",
+    "ID": "fec3683"
+  },
+  "Isolation": "",
+  "KernelMemory": true,
+  "KernelVersion": "4.14.131-linuxkit",
+  "Labels": [],
+  "LiveRestoreEnabled": false,
+  "LoggingDriver": "json-file",
+  "MemTotal": 2088611840,
+  "MemoryLimit": true,
+  "NCPU": 2,
+  "NEventsListener": 2,
+  "NFd": 53,
+  "NGoroutines": 88,
+  "Name": "docker-desktop",
+  "NoProxy": "",
+  "OSType": "linux",
+  "OomKillDisable": true,
+  "OperatingSystem": "Docker Desktop",
+  "Plugins": {
+    "Authorization": null,
+    "Log": [
+      "awslogs",
+      "fluentd",
+      "gcplogs",
+      "gelf",
+      "journald",
+      "json-file",
+      "local",
+      "logentries",
+      "splunk",
+      "syslog"
+    ],
+    "Network": [
+      "bridge",
+      "host",
+      "ipvlan",
+      "macvlan",
+      "null",
+      "overlay"
+    ],
+    "Volume": [
+      "local"
+    ]
+  },
+  "RegistryConfig": {
+    "AllowNondistributableArtifactsCIDRs": [],
+    "AllowNondistributableArtifactsHostnames": [],
+    "IndexConfigs": {
+      "docker.io": {
+        "Mirrors": [],
+        "Name": "docker.io",
+        "Official": true,
+        "Secure": true
+      }
+    },
+    "InsecureRegistryCIDRs": [
+      "127.0.0.0/8"
+    ],
+    "Mirrors": []
+  },
+  "RuncCommit": {
+    "Expected": "425e105d5a03fabd737a126ad93d62a9eeede87f",
+    "ID": "425e105d5a03fabd737a126ad93d62a9eeede87f"
+  },
+  "Runtimes": {
+    "runc": {
+      "path": "runc"
+    }
+  },
+  "SecurityOptions": [
+    "name=seccomp,profile=default"
+  ],
+  "ServerVersion": "19.03.2",
+  "SwapLimit": true,
+  "Swarm": {
+    "ControlAvailable": false,
+    "Error": "",
+    "LocalNodeState": "inactive",
+    "NodeAddr": "",
+    "NodeID": "",
+    "RemoteManagers": null
+  },
+  "SystemStatus": null,
+  "SystemTime": "2019-11-18T00:03:27.4823769Z"
+}
